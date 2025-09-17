@@ -1,0 +1,15 @@
+@mixin media($size) {
+    @if $size == 'tablet-above' {
+        @media (min-width: 768px) {
+            @content;
+        }
+    } @else if $size == 'laptop-above' {
+        @media (min-width: 992px) {
+            @content;
+        }
+    } @else if $size == 'desktop-above' {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+}

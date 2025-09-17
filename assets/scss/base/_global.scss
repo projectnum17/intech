@@ -1,0 +1,72 @@
+@use 'mixins' as *;
+@use 'media' as *;
+@use 'var' as *;
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font: 400 16px/1.5 var(--ff-base);
+    min-height: 100vh;
+    color: var(--white-color);
+    background: var(--dark-color);
+
+    &.is-locked {
+        overflow: hidden;
+    }
+}
+
+main {
+    flex: 1;
+}
+
+button {
+    @include reset_button;
+    display: flex;
+    color: inherit;
+}
+
+a {
+    @include reset_link;
+}
+
+.container {
+    max-width: var(--container-width);
+    padding-inline: var(--container-padding);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.h1 {
+    font: 800 26px / 130% var(--ff-base);
+    text-transform: uppercase;
+
+    @include media('laptop-above') {
+        font: 800 32px / 120% var(--ff-base);
+    }
+
+    &.h1--lg {
+        font: 800 32px / 120% var(--ff-base);
+
+        @include media('laptop-above') {
+            font: 800 62px / 110% var(--ff-base);
+        }
+    }
+}
+
+.h2 {
+    font: 800 26px / 130% var(--ff-base);
+    text-transform: uppercase;
+
+    @include media('laptop-above') {
+        font: 800 32px / 120% var(--ff-base);
+    }
+}
+
+.h3 {
+    font: 800 26px / 130% var(--ff-base);
+    text-transform: uppercase;
+}

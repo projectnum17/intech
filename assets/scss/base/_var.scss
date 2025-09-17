@@ -1,0 +1,24 @@
+:root {
+    --container-width: 1512px;
+    --container-padding: 12px;
+    --section-mb: 48px;
+
+    --ff-base: 'Namu', sans-serif;
+
+    --dark-color: #081116;
+    --white-color: #fff;
+    --accent-color: #325fec;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --container-padding: 40px;
+        --section-mb: 80px;
+    }
+}
+
+@media (min-width: 992px) {
+    :root {
+        --container-padding: 80px;
+    }
+}
