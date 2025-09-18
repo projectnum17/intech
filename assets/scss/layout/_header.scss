@@ -42,12 +42,14 @@
     &__lang {
         position: relative;
         padding: 10px 8px;
-        @include hover {
+
+        &.is-active {
             li:last-child {
                 opacity: 1;
                 visibility: visible;
             }
         }
+
         li {
             &:last-child {
                 opacity: 0;
