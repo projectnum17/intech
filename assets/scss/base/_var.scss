@@ -1,24 +1,28 @@
 :root {
     --container-width: 1512px;
     --container-padding: 12px;
-    --section-mb: 48px;
+    --section-mb: 56px;
 
     --ff-base: 'Namu', sans-serif;
+    --ff-sec: 'Audiowide', sans-serif;
+    --ff-alt: 'Gilroy', sans-serif;
 
     --dark-color: #081116;
     --white-color: #fff;
     --accent-color: #325fec;
+    --accent-light: #508fff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 577px) {
     :root {
         --container-padding: 40px;
-        --section-mb: 80px;
+        --section-mb: 48px;
     }
 }
 
 @media (min-width: 992px) {
     :root {
         --container-padding: 80px;
+        --section-mb: 80px;
     }
 }

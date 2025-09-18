@@ -1,15 +1,703 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/main.min.css">
-    <title>Document</title>
+    <script defer type="module" src="./assets/scripts/script.js"></script>
+    <title>Intech | Home</title>
 </head>
 
 <body>
-    <h1 class="h1">hello</h1>
+    <div class="form-popup js-form-popup">
+        <img class="form-popup__bg" src="./assets/images/icons/bg-form.svg" alt="BG">
+        <div class="form-popup__success js-form-success">
+            <div class="form-popup__head">
+                <div class="form-popup__logo">
+                    <span>INTECH</span>
+                    <span>Machines that matter</span>
+                </div>
+                <button type="button" class="form-popup__close js-form-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4L20 20" stroke="white" stroke-width="1.5" />
+                        <path d="M4 20L20 4" stroke="white" stroke-width="1.5" />
+                    </svg>
+                </button>
+            </div>
+            <div class="form-popup__inner">
+                <p class="form-popup__title">
+                    Наш менеджер зв’яжеться з вами найближчим часом, щоб уточнити деталі та надати відповідь.
+                </p>
+                <a href="/" class="form-popup__link cta">
+                    <span>НА ГОЛОВНУ</span>
+                    <span>
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.5 4.19V5.81H5.81V9.5H4.19V5.81H0.5V4.19H4.19V0.5H5.81V4.19H9.5Z" fill="white">
+                            </path>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="form-popup__content js-form-content">
+            <div class="form-popup__head">
+                <div class="form-popup__logo">
+                    <span>INTECH</span>
+                    <span>Machines that matter</span>
+                </div>
+                <button type="button" class="form-popup__close js-form-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4L20 20" stroke="white" stroke-width="1.5" />
+                        <path d="M4 20L20 4" stroke="white" stroke-width="1.5" />
+                    </svg>
+                </button>
+            </div>
+            <div class="form-popup__head">
+                <p class="form-popup__title">Отримати пропозицію</p>
+                <button type="button" class="form-popup__close js-form-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4L20 20" stroke="white" stroke-width="1.5" />
+                        <path d="M4 20L20 4" stroke="white" stroke-width="1.5" />
+                    </svg>
+                </button>
+            </div>
+            <form class="form-popup__submit js-form">
+                <div class="form-popup__data">
+                    <div class="form-popup__wrapper">
+                        <div class="form-popup__field">
+                            <label for="nameField" class="form-popup__label">Ім’я</label>
+                            <input name="nameField" id="nameField" type="text" class="form-popup__input"
+                                placeholder="Віталій">
+                        </div>
+                        <div class="form-popup__field">
+                            <label for="companyField" class="form-popup__label">
+                                Назва компанії
+                            </label>
+                            <input name="companyField" id="companyField" type="text" class="form-popup__input"
+                                placeholder="INTECH">
+                        </div>
+                    </div>
+                    <div class="form-popup__field">
+                        <label for="mailField" class="form-popup__label">Email</label>
+                        <input name="mailField" id="mailField" type="email" class="form-popup__input"
+                            placeholder="example@example.com">
+                    </div>
+                    <div class="form-popup__field">
+                        <label for="phoneField" class="form-popup__label">Телефон</label>
+                        <input name="phoneField" id="phoneField" type="tel" class="form-popup__input"
+                            placeholder="+380 73 066 23 45">
+                    </div>
+                    <div class="form-popup__field">
+                        <label for="commentField" class="form-popup__label">Коментар</label>
+                        <input name="commentField" id="commentField" type="text" class="form-popup__input"
+                            placeholder="Подзвоніть мені швидше!">
+                    </div>
+                </div>
+                <div class="form-popup__mta">
+                    <div class="form-popup__check">
+                        <input id="privacyCheck" name="privacyCheck" type="checkbox">
+                        <label for="privacyCheck">
+                            <p>
+                                Я ознайомлений(-на) з <a href="javascript:void(0)">політикою конфіденційності</a> і даю
+                                згоду на
+                                обробку моїх персональних даних
+                            </p>
+                        </label>
+                    </div>
+                    <button type="submit" class="form-popup__btn cta">
+                        <span>звʼязатися з нами</span>
+                        <span>
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 4.19V5.81H5.81V9.5H4.19V5.81H0.5V4.19H4.19V0.5H5.81V4.19H9.5Z"
+                                    fill="white">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="mobile-menu js-menu">
+        <div class="mobile-menu__content">
+            <img class="mobile-menu__deco" src="./assets/images/world-map.png" alt="Decoration">
+            <ul class="mobile-menu__list">
+                <li><a href="javascript: void(0)">Про нас</a></li>
+                <li><a href="javascript: void(0)">послуги</a></li>
+                <li><a href="javascript: void(0)">Каталог</a></li>
+                <li><a href="javascript: void(0)">Карʼєра</a></li>
+                <li><a href="javascript: void(0)">Блог</a></li>
+                <li><a href="javascript: void(0)">FAQ</a></li>
+                <li><a href="javascript: void(0)">Контакти</a></li>
+            </ul>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <a href="javascript: void(0)" class="header__logo">
+                <span>INTECH</span>
+                <span>Machines that matter</span>
+            </a>
+            <div class="header__panel">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li>
+                            <a href="javascript:void(0)">Про нас</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">послуги</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Блог</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Контакти</a>
+                        </li>
+                    </ul>
+                    <ul class="header__lang">
+                        <li>
+                            <a href="javascript:void(0)">
+                                UA
+                                <span>🇺🇦</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                EN
+                                <span>🇬🇧</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button type="button" class="header__burger js-toggle-menu">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main main--home">
+        <section class="intro">
+            <img src="./assets/images/bg-hero.jpg" alt="BG" class="intro__bg">
+            <div class="container">
+                <div class="intro__col">
+                    <h1 class="intro__title h1 h1--lg">
+                        Рішення у сфері спецтехніки, які працюють на результат
+                    </h1>
+                    <p class="intro__description tablet--hidden">
+                        INTECH допомагає будівельним, аграрним та промисловим компаніям знаходити надійну техніку, що
+                        відповідає реальним задачам бізнесу. З оновленим онлайн-каталогом - швидше, простіше, зручніше.
+                    </p>
+                    <button class="cta js-cta mobile--hidden" type="button">
+                        <span>звʼязатися з нами</span>
+                        <span>
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 4.19V5.81H5.81V9.5H4.19V5.81H0.5V4.19H4.19V0.5H5.81V4.19H9.5Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="cta js-cta" type="button">
+                        <span>звʼязатися з нами</span>
+                        <span>
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 4.19V5.81H5.81V9.5H4.19V5.81H0.5V4.19H4.19V0.5H5.81V4.19H9.5Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="intro__col">
+                    <div class="intro__catalog">
+                        <img src="./assets/images/icons/ico-text.svg" alt="Decoration">
+                        <p class="intro__subtitle">Каталог техніки 2025</p>
+                        <a href="javascript: void(0)" class="intro__link">каталог</a>
+                    </div>
+                    <p class="intro__description mobile--hidden">
+                        INTECH допомагає будівельним, аграрним та промисловим компаніям знаходити надійну техніку, що
+                        відповідає реальним задачам бізнесу. З оновленим онлайн-каталогом - швидше, простіше, зручніше.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="partners">
+                <div class="partners__item">
+                    <img src="./assets/images/partner_1.png" alt="Partner">
+                </div>
+                <div class="partners__item">
+                    <img src="./assets/images/partner_2.png" alt="Partner">
+                </div>
+                <div class="partners__item">
+                    <img src="./assets/images/partner_3.png" alt="Partner">
+                </div>
+                <div class="partners__item">
+                    <img src="./assets/images/partner_4.png" alt="Partner">
+                </div>
+                <div class="partners__item">
+                    <img src="./assets/images/partner_5.png" alt="Partner">
+                </div>
+                <div class="partners__item">
+                    <img src="./assets/images/partner_6.png" alt="Partner">
+                </div>
+            </div>
+        </div>
+        <section class="knows">
+            <img src="./assets/images/world-map.png" alt="BG" class="knows__bg">
+            <div class="container">
+                <div class="knows__col">
+                    <h2 class="h2 knows__title">
+                        Ми знаємо, як зробити складне простим
+                    </h2>
+                </div>
+                <div class="knows__col">
+                    <p>
+                        Ми — команда професіоналів, що надає комплексні ремонтні послуги у Дубаї. Вже багато років
+                        допомагаємо нашим клієнтам перетворювати свої домівки на місця, де поєднуються комфорт і стиль.
+                        Спеціалізуємося на обслуговуванні кондиціонерів, сантехніки, електромонтажних робіт, а також
+                        виконуємо всі види ремонту, від дрібних робіт до масштабних реновацій.
+                    </p>
+                    <p>
+                        Наша місія — надати вам найвищу якість послуг у максимально короткі терміни. Ми працюємо для
+                        того,
+                        щоб ви могли насолоджуватися своїм житлом, не турбуючись про технічні несправності. Ми розуміємо
+                        специфіку життя в Дубаї і пропонуємо рішення, які повністю відповідають потребам сучасних
+                        експатів.
+                    </p>
+                    <p>
+                        Обираючи нас, ви обираєте надійність, якість та індивідуальний підхід до кожного клієнта.
+                    </p>
+                    <a href="javascript: void(0)" class="knows__details">
+                        <span>Докладніше</span>
+                        <svg width="48" height="16" viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M47.7071 8.70711C48.0976 8.31658 48.0976 7.68342 47.7071 7.29289L41.3431 0.928932C40.9526 0.538408 40.3195 0.538408 39.9289 0.928932C39.5384 1.31946 39.5384 1.95262 39.9289 2.34315L45.5858 8L39.9289 13.6569C39.5384 14.0474 39.5384 14.6805 39.9289 15.0711C40.3195 15.4616 40.9526 15.4616 41.3431 15.0711L47.7071 8.70711ZM0 8V9H47V8V7H0V8Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="knows__stats statistic">
+                    <div class="statistic__item">
+                        <span class="statistic__count">8+</span>
+                        <p class="statistic__title">років досвіду</p>
+                        <p class="statistic__text">
+                            Успішна робота з клієнтами у будівництві, агро та промисловості
+                        </p>
+                    </div>
+                    <div class="statistic__item">
+                        <span class="statistic__count">100+</span>
+                        <p class="statistic__title">одиниць техніки</p>
+                        <p class="statistic__text">
+                            Актуальний каталог із перевіреними моделями для різних задач
+                        </p>
+                    </div>
+                    <div class="statistic__item">
+                        <span class="statistic__count">24/7</span>
+                        <p class="statistic__title">сервісна підтримка</p>
+                        <p class="statistic__text">
+                            Оперативна допомога, виїзні бригади, склад запчастин в Україні
+                        </p>
+                    </div>
+                    <div class="statistic__item">
+                        <span class="statistic__count">10+</span>
+                        <p class="statistic__title">фінансових партнерів</p>
+                        <p class="statistic__text">
+                            Лізинг та банківські програми на вигідних умовах
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container">
+                <p class="section-subtitle">переваги</p>
+                <h2 class="advantages__title h2">Наші переваги</h2>
+                <div class="advantages-cards">
+                    <div class="advantages-cards__item">
+                        <h3 class="advantages-cards__title h4">
+                            Оновлений онлайн-каталог
+                        </h3>
+                        <p class="advantages-cards__text">
+                            Чітка структура, зручний пошук, технічні характеристики — усе для швидкого і точного вибору.
+                        </p>
+                    </div>
+                    <div class="advantages-cards__item">
+                        <h3 class="advantages-cards__title h4">
+                            Досвід у сфері спецтехніки
+                        </h3>
+                        <p class="advantages-cards__text">
+                            Працюємо з технікою для будівельних, аграрних та промислових компаній — знаємо специфіку
+                            кожної галузі.
+                        </p>
+                    </div>
+                    <div class="advantages-cards__item">
+                        <h3 class="advantages-cards__title h4">
+                            Партнерський підхід
+                        </h3>
+                        <p class="advantages-cards__text">
+                            Не просто продаємо техніку — підбираємо рішення під ваші задачі та супроводжуємо на кожному
+                            етапі.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <p class="section-subtitle">Послуги</p>
+                <h2 class="services__title h2">
+                    Наші рішення для вашого бізнесу
+                </h2>
+                <div class="services__cards">
+                    <a href="javascript: void(0)" class="services__card">
+                        <img width="343" height="420" loading="lazy" class="services__card-thumb"
+                            src="./assets/images/service_1.jpg" alt="Thumbnail">
+                        <p class="services__card-title">кредитування</p>
+                        <div class="services__card-cta">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.0711 17H9.92893" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M17.707 10.636L24.071 16.9999L17.707 23.3639" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="javascript: void(0)" class="services__card">
+                        <img width="343" height="420" loading="lazy" class="services__card-thumb"
+                            src="./assets/images/service_2.jpg" alt="Thumbnail">
+                        <p class="services__card-title">лізинг</p>
+                        <div class="services__card-cta">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.0711 17H9.92893" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M17.707 10.636L24.071 16.9999L17.707 23.3639" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="javascript: void(0)" class="services__card">
+                        <img width="343" height="420" loading="lazy" class="services__card-thumb"
+                            src="./assets/images/service_3.jpg" alt="Thumbnail">
+                        <p class="services__card-title">обслуговування</p>
+                        <div class="services__card-cta">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.0711 17H9.92893" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M17.707 10.636L24.071 16.9999L17.707 23.3639" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="catalog">
+            <div class="container">
+                <p class="section-subtitle">Каталог</p>
+                <h2 class="services__title h2">
+                    Каталог
+                </h2>
+                <div class="catalog-cards">
+                    <a href="javascript: void(0)" class="catalog-cards__item">
+                        <p class="catalog-cards__title h3">Автокрани</p>
+                        <img class="catalog-cards__thumb catalog-cards__thumb--default" loading="lazy"
+                            src="./assets/images/catalog/catalog_1.svg" alt="Thumbnail">
+                        <img class="catalog-cards__thumb catalog-cards__thumb--hover" loading="lazy"
+                            src="./assets/images/catalog/catalog_1_hov.svg" alt="Thumbnail">
+                        <div class="catalog-cards__cta">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.0711 17H9.92893" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path d="M17.707 10.636L24.071 16.9999L17.707 23.3639" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="javascript: void(0)" class="catalog-cards__item">
+                        <p class="catalog-cards__title h3">Автогідропідіймачі</p>
+                        <img class="catalog-cards__thumb catalog-cards__thumb--default" loading="lazy"
+                            src="./assets/images/catalog/catalog_2.svg" alt="Thumbnail">
+                        <img class="catalog-cards__thumb catalog-cards__thumb--hover" loading="lazy"
+                            src="./assets/images/catalog/catalog_2_hov.svg" alt="Thumbnail">
+                        <div class="catalog-cards__cta">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.0711 17H9.92893" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path d="M17.707 10.636L24.071 16.9999L17.707 23.3639" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="javascript: void(0)" class="catalog-cards__item catalog-cards__item--all">
+                        <p class="catalog-cards__title h3">
+                            Перейти до каталогу
+                        </p>
+                        <img class="catalog-cards__thumb catalog-cards__thumb--default" loading="lazy"
+                            src="./assets/images/catalog/catalog_all.svg" alt="Thumbnail">
+                        <img class="catalog-cards__thumb catalog-cards__thumb--hover" loading="lazy"
+                            src="./assets/images/catalog/catalog_all_hov.svg" alt="Thumbnail">
+                        <div class="catalog-cards__cta">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.0711 17H9.92893" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path d="M17.707 10.636L24.071 16.9999L17.707 23.3639" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="javascript: void(0)" class="catalog-cards__item">
+                        <p class="catalog-cards__title h3">
+                            Екскаватор-планувальник на автомобільному шасі
+                        </p>
+                        <img class="catalog-cards__thumb catalog-cards__thumb--default" loading="lazy"
+                            src="./assets/images/catalog/catalog_3.svg" alt="Thumbnail">
+                        <img class="catalog-cards__thumb catalog-cards__thumb--hover" loading="lazy"
+                            src="./assets/images/catalog/catalog_3_hov.svg" alt="Thumbnail">
+                        <div class="catalog-cards__cta">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.0711 17H9.92893" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path d="M17.707 10.636L24.071 16.9999L17.707 23.3639" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="javascript: void(0)" class="catalog-cards__item">
+                        <p class="catalog-cards__title h3">
+                            Екскаватор на автомобільному шасі
+                        </p>
+                        <img class="catalog-cards__thumb catalog-cards__thumb--default" loading="lazy"
+                            src="./assets/images/catalog/catalog_4.svg" alt="Thumbnail">
+                        <img class="catalog-cards__thumb catalog-cards__thumb--hover" loading="lazy"
+                            src="./assets/images/catalog/catalog_4_hov.svg" alt="Thumbnail">
+                        <div class="catalog-cards__cta">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.0711 17H9.92893" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path d="M17.707 10.636L24.071 16.9999L17.707 23.3639" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <p class="section-subtitle">Новини</p>
+                <div class="news__head">
+                    <h2 class="services__title h2">
+                        Новини та огляди техніки
+                    </h2>
+                    <a href="javascript: void(0)" class="news__link cta laptop--visible">
+                        <span>Перейти до всіх</span>
+                        <span>
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 4.19V5.81H5.81V9.5H4.19V5.81H0.5V4.19H4.19V0.5H5.81V4.19H9.5Z"
+                                    fill="white"></path>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="news__cards">
+                    <a href="javascript: void(0)" class="news__card">
+                        <img width="343" height="420" loading="lazy" class="news__thumb"
+                            src="./assets/images/news_1.jpg" alt="Thumb">
+                        <div class="news__content">
+                            <p class="news__date">6 травня 2025</p>
+                            <div class="news__about">
+                                <p class="news__title">
+                                    Корисне про техніку — простою мовою
+                                </p>
+                                <p class="news__text js-text-short">
+                                    Ми ділимось практичним досвідом, щоб допомогти вам краще орієнтуватися у світі
+                                    спецтехніки та обладнання. В наших статтях — огляди техніки, поради з вибору,
+                                    порівняння моделей, інсайти з ринку будівництва, агро та промисловості. Чітко,
+                                    конкретно, по суті — тільки те, що справді стане у пригоді. Ми аналізуємо тенденції,
+                                    розбираємо типові запити клієнтів і даємо відповіді на запитання, які часто
+                                    виникають на практиці. Щоб кожне ваше рішення було влучним, обґрунтованим і
+                                    економічно вигідним.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript: void(0)" class="news__card">
+                        <img width="343" height="420" loading="lazy" class="news__thumb"
+                            src="./assets/images/news_2.jpg" alt="Thumb">
+                        <div class="news__content">
+                            <p class="news__date">6 травня 2025</p>
+                            <div class="news__about">
+                                <p class="news__title">
+                                    Новинки будівельної техніки 2025: на що звернути увагу
+                                </p>
+                                <p class="news__text js-text-short">
+                                    Ми зібрали найцікавіші новинки у сфері будівельної, аграрної та промислової техніки,
+                                    щоб допомогти вам зорієнтуватися в тому, що дійсно варте уваги. Розбираємося у
+                                    функціоналі, перевагах, технічних інноваціях, а також відзначаємо ключові
+                                    відмінності від попередніх поколінь моделей. Хто отримає найбільшу вигоду від
+                                    новинок? Кому ця техніка підходить найбільше — а кому краще дочекатися наступного
+                                    релізу?
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript: void(0)" class="news__card">
+                        <img width="343" height="420" loading="lazy" class="news__thumb"
+                            src="./assets/images/news_3.jpg" alt="Thumb">
+                        <div class="news__content">
+                            <p class="news__date">6 травня 2025</p>
+                            <div class="news__about">
+                                <p class="news__title">
+                                    Порівняння дизельної, бензинової та електричної спецтехніки
+                                </p>
+                                <p class="news__text js-text-short">
+                                    Ми ділимось практичним досвідом, щоб допомогти вам краще орієнтуватися у світі
+                                    спецтехніки та обладнання. В наших статтях — огляди техніки, поради з вибору,
+                                    порівняння моделей, інсайти з ринку будівництва, агро та промисловості. Чітко,
+                                    конкретно, по суті — тільки те, що справді стане у пригоді.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript: void(0)" class="news__card">
+                        <img width="343" height="420" loading="lazy" class="news__thumb"
+                            src="./assets/images/news_4.jpg" alt="Thumb">
+                        <div class="news__content">
+                            <p class="news__date">6 травня 2025</p>
+                            <div class="news__about">
+                                <p class="news__title">
+                                    Знати більше — обирати точніше
+                                </p>
+                                <p class="news__text js-text-short">
+                                    Ми ділимось практичним досвідом у сфері будівельної, аграрної та промислової
+                                    техніки, щоб ви могли приймати зважені, обґрунтовані рішення. Наш блог — це більше,
+                                    ніж тексти. Це концентрат знань, реальних кейсів і перевірених рішень, які ми
+                                    напрацювали у співпраці з клієнтами з різних галузей. Тут ви знайдете відповіді на
+                                    актуальні запити, професійні рекомендації, огляди техніки з точки зору користувача,
+                                    глибоку аналітику ринку та чіткі поради, які можна застосовувати вже сьогодні.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <a href="javascript: void(0)" class="news__link cta laptop--hidden">
+                    <span>Перейти до всіх</span>
+                    <span>
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.5 4.19V5.81H5.81V9.5H4.19V5.81H0.5V4.19H4.19V0.5H5.81V4.19H9.5Z" fill="white">
+                            </path>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__head">
+                <p class="footer__title">
+                    Будуємо <span>довіру</span> та піднімаємо ваш <span>бізнес</span> разом, день за днем
+                </p>
+                <div class="footer__arrow">
+                    <svg width="78" height="79" viewBox="0 0 78 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M74 78.3552C76.2091 78.3552 78 76.5643 78 74.3552L78 38.3552C78 36.1461 76.2091 34.3552 74 34.3552C71.7908 34.3552 70 36.1461 70 38.3552L70 70.3552L38 70.3552C35.7908 70.3552 34 72.1461 34 74.3552C34 76.5643 35.7908 78.3552 38 78.3552L74 78.3552ZM3.28931 3.64453L0.46088 6.47296L71.1716 77.1836L74 74.3552L76.8284 71.5268L6.11773 0.816104L3.28931 3.64453Z"
+                            fill="white" />
+                    </svg>
+                </div>
+            </div>
+            <div class="footer__inner">
+                <a href="javascript: void(0)" class="footer__logo">
+                    <span>INTECH</span>
+                    <span>Machines that matter</span>
+                </a>
+                <div class="footer__menus">
+                    <div class="footer__menu">
+                        <p class="footer__subtitle">Меню</p>
+                        <ul class="footer__list">
+                            <li>
+                                <a href="javascript: void(0)">про нас</a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0)">каталог</a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0)">послуги</a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0)">блог</a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0)">faq</a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0)">контакти</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu">
+                        <p class="footer__subtitle">контакти</p>
+                        <ul class="footer__list">
+                            <li>
+                                <a href="javascript: void(0)">Адреса: вул. Назва., Місто, Країна</a>
+                            </li>
+                            <li>
+                                <a href="tel:+380001234567">+380 (00) 123-45-67</a>
+                            </li>
+                            <li>
+                                <a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu">
+                        <p class="footer__subtitle">Соц мережі</p>
+                        <ul class="footer__list">
+                            <li>
+                                <a href="javascript: void(0)">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0)">LinkedIn</a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0)">Youtube</a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0)">Twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__info">
+                <p class="footer__copy">©2025 seafarers. All rights reserved</p>
+                <div class="footer__legals">
+                    <a href="javascript: void(0)">Політика конфіденційності </a>
+                    <span>|</span>
+                    <a href="javascript: void(0)">Політика щодо файлів cookie</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

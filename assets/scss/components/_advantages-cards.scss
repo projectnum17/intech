@@ -1,0 +1,45 @@
+@use '../base/media' as *;
+@use '../base/mixins' as *;
+
+.advantages-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+
+    @include media('laptop-above') {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        padding: 33px 16px;
+
+        &:not(:last-child) {
+            border: 1px solid #ffffff33;
+            background: var(--accent-color);
+        }
+
+        &:last-child {
+            background: #fff;
+            color: var(--dark-color);
+        }
+
+        @include media('laptop-above') {
+            padding: 60px 20px;
+            flex: 1;
+            min-width: 440px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 16px;
+
+        @include media('laptop-above') {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__text {
+        font: 800 15px / 150% var(--ff-base);
+    }
+}

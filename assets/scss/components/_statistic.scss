@@ -1,0 +1,45 @@
+@use '../base/media' as *;
+@use '../base/mixins' as *;
+
+.statistic {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include media('laptop-above') {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #fff;
+
+            @include media('laptop-above') {
+                padding-bottom: 0;
+                padding-right: 15px;
+                border-right: 1px solid #fff;
+                border-bottom: none;
+            }
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__count {
+        font: 800 46px / 92% var(--ff-base);
+        text-transform: uppercase;
+        color: var(--accent-light);
+    }
+
+    &__title {
+        font: 800 15px / 150% var(--ff-base);
+    }
+
+    &__text {
+        font: 800 15px / 150% var(--ff-base);
+    }
+}

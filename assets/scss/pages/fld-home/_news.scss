@@ -1,0 +1,148 @@
+@use '../../base/media' as *;
+@use '../../base/mixins' as *;
+
+.main--home {
+    .news {
+        &__head {
+            @include media('laptop-above') {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+                margin-bottom: 40px;
+            }
+        }
+
+        &__cards {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 16px;
+            margin-bottom: 20px;
+            @include media('laptop-above') {
+                grid-template-columns: repeat(6, 1fr);
+                gap: 24px;
+            }
+        }
+
+        &__card {
+            height: 420px;
+            position: relative;
+            @include media('laptop-above') {
+                @include media('laptop-above') {
+                    &:nth-child(4n + 1) {
+                        grid-column: 1 / span 3;
+                        grid-row: span 2;
+                        height: 581px;
+                    }
+
+                    &:nth-child(4n + 2),
+                    &:nth-child(4n + 3) {
+                        grid-column: 4 / span 3;
+                        grid-row: auto;
+                        height: 278px;
+                    }
+
+                    &:nth-child(4n + 4) {
+                        grid-column: 1 / span 6;
+                        grid-row: auto;
+                        height: 436px;
+                    }
+                }
+            }
+
+            &::after,
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+            }
+
+            &::after {
+                background: #00000033;
+                @include transitions(0.2s, ease-in);
+            }
+
+            &::before {
+                background: linear-gradient(
+                    0deg,
+                    rgba(0, 0, 0, 0.2),
+                    rgba(0, 0, 0, 0.2)
+                );
+            }
+
+            @include hover {
+                &::after {
+                    background: #00000066;
+                }
+            }
+        }
+
+        &__thumb {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &__content {
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 15px;
+            position: absolute;
+            top: 32px;
+            bottom: 32px;
+            left: 16px;
+            right: 16px;
+            overflow: scroll;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            @include media('laptop-above') {
+                inset: 16px;
+            }
+        }
+
+        &__date {
+            font: 800 32px / 120% var(--ff-base);
+            text-transform: uppercase;
+        }
+
+        &__title {
+            font: 800 26px / 130% var(--ff-base);
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        &__text {
+            font: 800 15px / 150% var(--ff-base);
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+        }
+
+        &__link {
+            &.laptop--hidden {
+                @include media('laptop-above') {
+                    display: none;
+                }
+            }
+
+            &.laptop--visible {
+                display: none;
+                @include media('laptop-above') {
+                    display: flex;
+                    max-width: 368px;
+                }
+            }
+        }
+    }
+}

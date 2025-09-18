@@ -1,0 +1,211 @@
+@use '../base/media' as *;
+@use '../base/mixins' as *;
+
+.footer {
+    padding-block: 56px 32px;
+
+    @include media('tablet-above') {
+        padding-block: 48px 32px;
+    }
+
+    @include media('laptop-above') {
+        padding-block: 120px 40px;
+    }
+
+    .container {
+        padding-inline: 16px;
+
+        @media (min-width: 577px) {
+            padding-inline: 40px;
+        }
+
+        @media (min-width: 992px) {
+            padding-inline: 80px;
+        }
+    }
+
+    &__head {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 56px;
+
+        @include media('tablet-above') {
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            justify-content: space-between;
+            margin-bottom: 48px;
+        }
+        @include media('laptop-above') {
+            gap: 64px;
+        }
+    }
+
+    &__arrow {
+        background: var(--accent-color);
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        @include media('laptop-above') {
+            width: 180px;
+            height: 180px;
+        }
+
+        svg {
+            width: 40px;
+            height: 40px;
+
+            @include media('laptop-above') {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+
+    &__title {
+        font: 800 24px / 120% var(--ff-base);
+        text-transform: uppercase;
+
+        span {
+            color: var(--accent-color);
+        }
+
+        @include media('tablet-above') {
+            font-size: 32px;
+        }
+
+        @include media('laptop-above') {
+            font-size: 63px;
+        }
+    }
+
+    &__subtitle {
+        font: 800 24px / 120% var(--ff-base);
+        text-transform: uppercase;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            &:first-child {
+                font: 400 51px / 146% var(--ff-sec);
+                @include media('laptop-above') {
+                    line-height: 100%;
+                }
+            }
+
+            &:last-child {
+                font: 300 17px / 146% var(--ff-alt);
+                letter-spacing: 1px;
+                text-transform: lowercase;
+                margin-top: -12px;
+                @include media('laptop-above') {
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        @include media('laptop-above') {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+    }
+
+    &__menus {
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        @include media('tablet-above') {
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        @include media('laptop-above') {
+            max-width: 813px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        &:nth-child(2) {
+            .footer__list {
+                max-width: 153px;
+                a {
+                    text-transform: inherit;
+                }
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        a {
+            font: 800 15px / 90% var(--ff-base);
+            text-transform: uppercase;
+        }
+    }
+
+    &__info {
+        padding-top: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        border-top: 1px solid #fff;
+        @include media('laptop-above') {
+            padding-top: 40px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__copy {
+        font: 800 18px / 30px var(--ff-base);
+    }
+
+    &__legals {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        @include media('laptop-above') {
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+
+        a {
+            font: 800 18px / 30px var(--ff-base);
+        }
+
+        span {
+            display: none;
+            @include media('laptop-above') {
+                display: block;
+            }
+        }
+    }
+}
