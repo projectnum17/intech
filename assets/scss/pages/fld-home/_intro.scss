@@ -130,6 +130,8 @@
                 right: 0;
                 bottom: 0;
                 z-index: -1;
+                max-width: 100%;
+                width: inherit;
                 @include media('tablet-above') {
                     max-width: 197px;
                 }
@@ -178,57 +180,67 @@
             margin-bottom: 32px;
 
             @include media('tablet-above') {
-                max-width: 269px;
+                max-width: max-content;
                 margin-bottom: 0;
                 display: none;
 
                 &.mobile--hidden {
                     display: flex;
                 }
+
+                span {
+                    &:first-child {
+                        padding: 13px 20px;
+                    }
+                }
             }
 
             @include media('laptop-above') {
-                max-width: 368px;
+                span {
+                    &:first-child {
+                        padding: 21px 49px;
+                    }
+                }
             }
         }
     }
-}
-
-.partners {
-    display: flex;
-    overflow: scroll;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    &::-webkit-scrollbar {
-        display: none;
-    }
-    margin-bottom: var(--section-mb);
-
-    &__item {
+    .partners {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 16px 17px;
-        border-top: 1px solid #fff;
-        border-bottom: 1px solid #fff;
-
-        @include media('laptop-above') {
-            padding: 40px 30px;
+        overflow: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar {
+            display: none;
         }
+        margin-bottom: var(--section-mb);
 
-        &:first-child {
-            border-left: 1px solid #fff;
-        }
-
-        &:not(:first-child),
-        &:not(:last-child) {
-            border-right: 1px solid #fff;
-        }
-
-        img {
+        &__item {
             display: flex;
-            flex-shrink: 0;
-            max-width: 164px;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 17px;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+
+            @include media('laptop-above') {
+                padding: 40px 30px;
+            }
+
+            &:first-child {
+                border-left: 1px solid #fff;
+            }
+
+            &:not(:first-child),
+            &:not(:last-child) {
+                border-right: 1px solid #fff;
+            }
+
+            img {
+                display: flex;
+                flex-shrink: 0;
+                max-width: 164px;
+                width: inherit;
+            }
         }
     }
 }

@@ -1,5 +1,5 @@
 :root {
-    --container-width: 1512px;
+    --container-width: 1432px;
     --container-padding: 12px;
     --section-mb: 56px;
 
@@ -22,7 +22,7 @@
 
 @media (min-width: 992px) {
     :root {
-        --container-padding: 80px;
+        // --container-padding: 80px;
         --section-mb: 80px;
     }
 }

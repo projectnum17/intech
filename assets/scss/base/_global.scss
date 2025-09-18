@@ -123,5 +123,6 @@ section:not(:last-child) {
     }
     @include media('laptop-above') {
         line-height: 130%;
+        margin-bottom: 40px;
     }
 }

@@ -44,6 +44,10 @@
             padding: 17px;
             align-items: center;
             justify-content: center;
+            @include media('laptop-above') {
+                width: 64px;
+                height: 64px;
+            }
 
             svg {
                 display: inline-flex;

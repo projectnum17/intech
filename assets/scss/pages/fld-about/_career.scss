@@ -1,0 +1,60 @@
+@use '../../base/media' as *;
+@use '../../base/mixins' as *;
+
+.main--about {
+    .career {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            @include media('laptop-above') {
+                flex-direction: row;
+                align-items: flex-end;
+                gap: 20px;
+            }
+        }
+
+        &__col {
+            @include media('laptop-above') {
+                width: 50%;
+
+                &:last-child {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+        }
+
+        &__title {
+            @include media('laptop-above') {
+                margin-bottom: 24px;
+            }
+        }
+
+        &__text {
+            font: 800 15px / 150% var(--ff-base);
+        }
+
+        &__link {
+            @include media('tablet-above') {
+                width: max-content;
+
+                span:first-child {
+                    padding: 13px 20px;
+                }
+            }
+
+            @include media('laptop-above') {
+                span:first-child {
+                    padding: 20px 13px;
+                }
+
+                span:last-child {
+                    width: 64px;
+                    height: 64px;
+                }
+            }
+        }
+    }
+}
