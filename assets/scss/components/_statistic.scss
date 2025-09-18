@@ -31,6 +31,8 @@
 
     &__count {
         font: 800 46px / 92% var(--ff-base);
+        min-width: max-content;
+        display: inline-flex;
         text-transform: uppercase;
         color: var(--accent-light);
     }
