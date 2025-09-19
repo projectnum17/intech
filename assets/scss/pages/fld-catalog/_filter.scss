@@ -92,23 +92,6 @@
                 gap: 8px;
             }
 
-            &-main {
-                display: none;
-                @include media('laptop-above') {
-                    font: 800 18px / 130% var(--ff-base);
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
-                    text-transform: uppercase;
-                    padding: 19px;
-                    border: 1px solid var(--accent-light);
-                    @include transitions(0.2s, ease-in);
-                    @include hover {
-                        background: var(--accent-light);
-                    }
-                }
-            }
-
             &-btns {
                 display: flex;
                 align-items: center;
@@ -140,18 +123,44 @@
             &-next {
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                flex-shrink: 0;
-                width: 44px;
-                height: 44px;
-                @include transitions(0.2s, ease-in);
-                @include media('laptop-above') {
-                    width: 63px;
-                    height: 63px;
+                gap: 8px;
+
+                span {
+                    &.arrow {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 44px;
+                        height: 44px;
+                        @include transitions(0.2s, ease-in);
+                        @include media('laptop-above') {
+                            width: 63px;
+                            height: 63px;
+                        }
+                    }
+
+                    &.text {
+                        display: none;
+                        @include media('laptop-above') {
+                            font: 800 18px / 130% var(--ff-base);
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            text-transform: uppercase;
+                            padding: 19px;
+                            border: 1px solid var(--accent-light);
+                            @include transitions(0.2s, ease-in);
+                            @include hover {
+                                background: var(--accent-light);
+                            }
+                        }
+                    }
                 }
 
                 &.is-active {
-                    background: var(--accent-light);
+                    span.arrow {
+                        background: var(--accent-light);
+                    }
                 }
             }
         }
