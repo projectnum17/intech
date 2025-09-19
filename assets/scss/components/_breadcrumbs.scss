@@ -1,0 +1,46 @@
+@use '../base/media' as *;
+@use '../base/mixins' as *;
+
+.breadcrumbs {
+    max-width: var(--container-width);
+    padding-inline: var(--container-padding);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-top: 24px;
+    margin-bottom: 32px;
+
+    @include media('tablet-above') {
+        padding-top: 40px;
+        margin-bottom: 9px;
+    }
+
+    @include media('laptop-above') {
+        margin-bottom: 40px;
+    }
+
+    a {
+        font: 800 15px / 150% var(--ff-base);
+        display: inline-flex;
+        align-items: baseline;
+        gap: 4px;
+    }
+
+    li:not(:first-child) {
+        a {
+            color: var(--accent-light);
+            &::before {
+                content: '';
+                display: inline-flex;
+                flex-shrink: 0;
+                width: 16px;
+                height: 16px;
+                background: url('../images/icons/ico-breadcrmb.svg') no-repeat
+                    center center;
+                transform: translateY(3px);
+            }
+        }
+    }
+}

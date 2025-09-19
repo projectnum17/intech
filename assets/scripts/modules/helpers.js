@@ -51,7 +51,37 @@ const helpers = () => {
         });
     };
 
+    // === Remove if you need
+    const filterHandler = () => {
+        const filterBtns = document.querySelectorAll('.js-filter');
+        if (!filterBtns.length) return;
+
+        filterBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach((el) => {
+                    el.classList.remove('is-active');
+                });
+
+                btn.classList.add('is-active');
+
+                const container = btn.parentElement;
+                if (container) {
+                    const containerCenter = container.clientWidth / 2;
+                    const btnCenter = btn.offsetLeft + btn.offsetWidth / 2;
+                    const scrollLeft = btnCenter - containerCenter;
+
+                    container.scrollTo({
+                        left: scrollLeft,
+                        behavior: 'smooth',
+                    });
+                }
+            });
+        });
+    };
+
     animateCounters();
+    // === Remove if you need
+    filterHandler();
 };
 
 export default helpers;

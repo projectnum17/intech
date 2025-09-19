@@ -1,0 +1,43 @@
+@use '../../base/media' as *;
+@use '../../base/mixins' as *;
+
+.main--catalog {
+    .other {
+        margin-bottom: var(--section-mb);
+        &__title {
+            @include media('laptop-above') {
+                margin-bottom: 40px;
+            }
+        }
+        .catalog-cards {
+            @include media('laptop-above') {
+                grid-template-columns: repeat(4, 1fr);
+
+                &__title {
+                    font-size: 18px;
+                    left: 20px;
+                    top: 35px;
+
+                    &::before {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            &__title {
+                max-width: 80%;
+            }
+
+            &__item {
+                @include media('tablet-above') {
+                    height: 320px;
+                }
+
+                @include media('laptop-above') {
+                    grid-column: span 1;
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
