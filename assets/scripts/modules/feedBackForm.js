@@ -1,4 +1,4 @@
-const feedBackForm = () => {
+export const feedBackForm = () => {
     const formPopUp = document.querySelector('.js-form-popup');
     const openForm = document.querySelectorAll('.js-cta');
 
@@ -42,5 +42,3 @@ const feedBackForm = () => {
         }
     });
 };
-
-export default feedBackForm;

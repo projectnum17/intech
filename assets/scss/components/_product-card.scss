@@ -46,5 +46,18 @@
         gap: 10px;
         padding-block: 10px;
         border-bottom: 1px solid var(--accent-light);
+
+        span:last-child {
+            display: inline-flex;
+            flex-shrink: 0;
+        }
+    }
+
+    &__link {
+        span:first-child {
+            @include media('laptop-above') {
+                padding: 20px;
+            }
+        }
     }
 }

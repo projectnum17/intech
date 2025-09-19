@@ -46,7 +46,7 @@
             justify-content: center;
             @include media('laptop-above') {
                 width: 64px;
-                height: 64px;
+                // height: 64px;
             }
 
             svg {
