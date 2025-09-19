@@ -6,7 +6,7 @@ const helpers = () => {
         counters.forEach((counter) => {
             const target = +counter.dataset.target;
             const suffix = counter.dataset.suffix || '';
-            const duration = 2500;
+            const duration = 4500;
             const steps = 60;
             const interval = duration / steps;
 

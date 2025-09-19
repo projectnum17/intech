@@ -3,8 +3,12 @@
 
 .header {
     z-index: 6;
-    padding-block: 9px;
+    padding-block: 16px;
+    position: fixed;
+    width: 100%;
     background: var(--dark-color);
+
+
     .container {
         display: flex;
         align-items: center;
@@ -14,19 +18,10 @@
 
     &__logo {
         display: flex;
-        flex-direction: column;
-
-        span {
-            &:first-child {
-                font: 400 32px / 146% var(--ff-sec);
-            }
-
-            &:last-child {
-                font: 300 11px / 146% var(--ff-alt);
-                letter-spacing: 1px;
-                text-transform: lowercase;
-                margin-top: -5px;
-            }
+        flex-shrink: 0;
+        max-width: 136px;
+        img {
+            width: 100%;
         }
     }
 
@@ -100,15 +95,15 @@
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
-        width: 24px;
-        height: 24px;
+        width: 44px;
+        height: 44px;
 
         @include media('laptop-above') {
             display: none;
         }
 
         span {
-            width: 16px;
+            width: 18px;
             height: 2px;
             display: inline-block;
             flex-shrink: 0;
@@ -121,17 +116,17 @@
                 content: '';
                 position: absolute;
                 background: #fff;
-                width: 16px;
+                width: 18px;
                 height: 2px;
                 left: 0;
                 @include transitions(0.3s, ease-in);
             }
 
             &::after {
-                top: 6px;
+                top: 4px;
             }
             &::before {
-                bottom: 6px;
+                bottom: 4px;
             }
         }
 

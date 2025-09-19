@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     gap: 4px;
-    padding-top: 24px;
+    padding-top: 101px;
     margin-bottom: 32px;
     text-wrap: nowrap;
     overflow: scroll;
@@ -20,7 +20,7 @@
     }
 
     @include media('tablet-above') {
-        padding-top: 40px;
+        padding-top: 117px;
         margin-bottom: 9px;
     }
 

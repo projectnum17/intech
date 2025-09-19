@@ -1,15 +1,8 @@
 @use '../../base/media' as *;
 @use '../../base/mixins' as *;
 
-body:has(.main--catalog) {
-    .form-popup {
-        height: calc(100vh - 150px);
-        height: calc(100dvh - 150px);
-    }
-}
-
-.main--catalog {
-    .intro {
+.intro {
+    &--catalog {
         overflow: hidden;
         margin-bottom: 56px;
 
@@ -35,17 +28,17 @@ body:has(.main--catalog) {
             }
         }
 
-        &__title {
+        .intro__title {
             @include media('laptop-above') {
                 margin-bottom: 24px;
             }
         }
 
-        &__text {
+        .intro__text {
             font: 800 15px / 150% var(--ff-base);
         }
 
-        &__content {
+        .intro__content {
             .intro__text {
                 &:not(:last-of-type) {
                     margin-bottom: 24px;
@@ -70,7 +63,7 @@ body:has(.main--catalog) {
             }
         }
 
-        &__thumbnail {
+        .intro__thumbnail {
             max-width: 373px;
             margin: 0 auto;
 
@@ -89,7 +82,7 @@ body:has(.main--catalog) {
             }
         }
 
-        &__link {
+        .intro__link {
             @include media('tablet-above') {
                 width: max-content;
 

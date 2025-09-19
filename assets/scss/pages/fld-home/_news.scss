@@ -1,9 +1,9 @@
 @use '../../base/media' as *;
 @use '../../base/mixins' as *;
 
-.main--home {
-    .news {
-        &__head {
+.news {
+    &--home {
+        .news__head {
             @include media('laptop-above') {
                 display: flex;
                 align-items: flex-end;
@@ -13,7 +13,7 @@
             }
         }
 
-        &__cards {
+        .news__cards {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             gap: 16px;
@@ -24,7 +24,7 @@
             }
         }
 
-        &__card {
+        .news__card {
             height: 420px;
             position: relative;
             @include media('laptop-above') {
@@ -80,13 +80,13 @@
             }
         }
 
-        &__thumb {
+        .news__thumb {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
 
-        &__content {
+        .news__content {
             z-index: 2;
             display: flex;
             flex-direction: column;
@@ -109,27 +109,22 @@
             }
         }
 
-        &__date {
+        .news__date {
             font: 800 32px / 120% var(--ff-base);
             text-transform: uppercase;
         }
 
-        &__title {
+        .news__title {
             font: 800 26px / 130% var(--ff-base);
             text-transform: uppercase;
             margin-bottom: 16px;
         }
 
-        &__text {
+        .news__text {
             font: 800 15px / 150% var(--ff-base);
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            -webkit-line-clamp: 2;
         }
 
-        &__link {
+        .news__link {
             &.laptop--hidden {
                 @include media('laptop-above') {
                     display: none;

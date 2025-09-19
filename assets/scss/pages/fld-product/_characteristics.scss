@@ -1,9 +1,9 @@
 @use '../../base/media' as *;
 @use '../../base/mixins' as *;
 
-.main--product {
-    .char {
-        &__title {
+.char {
+    &--product {
+        .char__title {
             span {
                 color: var(--accent-light);
             }
@@ -13,12 +13,12 @@
             }
         }
 
-        &__list {
+        .char__list {
             counter-reset: item;
             margin-bottom: 32px;
         }
 
-        &__item {
+        .char__item {
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
@@ -79,7 +79,7 @@
             }
         }
 
-        &__link {
+        .char__link {
             span:first-child {
                 @include media('laptop-above') {
                     padding: 20px;

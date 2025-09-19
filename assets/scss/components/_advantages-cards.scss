@@ -24,16 +24,21 @@
             color: var(--dark-color);
         }
 
+        @include media('tablet-above') {
+            padding: 38px 32px;
+        }
         @include media('laptop-above') {
-            padding: 60px 20px;
+            padding: 60px;
             flex: 1;
-            min-width: 440px;
         }
     }
 
     &__title {
         margin-bottom: 16px;
 
+        @include media('tablet-above') {
+            font-size: 26px;
+        }
         @include media('laptop-above') {
             margin-bottom: 24px;
         }

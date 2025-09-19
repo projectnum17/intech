@@ -1,9 +1,9 @@
 @use '../../base/media' as *;
 @use '../../base/mixins' as *;
 
-.main--catalog {
-    .filter {
-        &__btns {
+.filter {
+    &--catalog {
+        .filter__btns {
             display: flex;
             align-items: center;
             gap: 16px;
@@ -16,7 +16,7 @@
             }
         }
 
-        &__btn {
+        .filter__btn {
             font: 800 15px / 150% var(--ff-base);
             display: flex;
             align-items: center;
@@ -41,7 +41,7 @@
             }
         }
 
-        &__cards {
+        .filter__cards {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             gap: 24px;
@@ -58,7 +58,7 @@
             }
         }
 
-        &__more {
+        .filter__more {
             font: 800 18px / 130% var(--ff-base);
             text-transform: uppercase;
             width: 100%;
@@ -80,7 +80,7 @@
             }
         }
 
-        &__pagination {
+        .filter__pagination {
             display: flex;
             align-items: center;
             justify-content: space-between;

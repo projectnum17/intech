@@ -1,9 +1,13 @@
 @use '../../base/media' as *;
 @use '../../base/mixins' as *;
 
-.main--home {
-    .advantages {
-        &__title {
+body:has(.page-home) {
+}
+
+.advantages {
+    &--home {
+        padding-top: var(--section-mb);
+        .advantages__title {
             @include media('laptop-above') {
                 margin-bottom: 40px;
             }

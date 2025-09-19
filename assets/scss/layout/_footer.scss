@@ -35,6 +35,7 @@
         }
         @include media('laptop-above') {
             gap: 64px;
+            margin-bottom: 80px;
         }
     }
 
@@ -64,15 +65,11 @@
     }
 
     &__title {
-        font: 800 24px / 120% var(--ff-base);
+        font: 800 32px / 120% var(--ff-base);
         text-transform: uppercase;
 
         span {
             color: var(--accent-color);
-        }
-
-        @include media('tablet-above') {
-            font-size: 32px;
         }
 
         @include media('laptop-above') {
@@ -87,25 +84,11 @@
 
     &__logo {
         display: flex;
-        flex-direction: column;
-
-        span {
-            &:first-child {
-                font: 400 51px / 146% var(--ff-sec);
-                @include media('laptop-above') {
-                    line-height: 100%;
-                }
-            }
-
-            &:last-child {
-                font: 300 17px / 146% var(--ff-alt);
-                letter-spacing: 1px;
-                text-transform: lowercase;
-                margin-top: -12px;
-                @include media('laptop-above') {
-                    margin-top: 0px;
-                }
-            }
+        flex-shrink: 0;
+        max-width: 218px;
+        width: 100%;
+        img {
+            width: 100%;
         }
     }
 
@@ -146,8 +129,9 @@
         &:nth-child(2) {
             .footer__list {
                 max-width: 153px;
-                a {
+                li {
                     text-transform: inherit;
+                    line-height: 150%;
                 }
             }
         }
@@ -158,7 +142,7 @@
         flex-direction: column;
         gap: 16px;
 
-        a {
+        li {
             font: 800 15px / 90% var(--ff-base);
             text-transform: uppercase;
         }

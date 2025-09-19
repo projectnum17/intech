@@ -1,9 +1,9 @@
 @use '../../base/media' as *;
 @use '../../base/mixins' as *;
 
-.main--about {
-    .career {
-        &__content {
+.career {
+    &--about {
+        .career__content {
             display: flex;
             flex-direction: column;
             gap: 32px;
@@ -15,7 +15,7 @@
             }
         }
 
-        &__col {
+        .career__col {
             @include media('laptop-above') {
                 width: 50%;
 
@@ -26,17 +26,17 @@
             }
         }
 
-        &__title {
+        .career__title {
             @include media('laptop-above') {
                 margin-bottom: 24px;
             }
         }
 
-        &__text {
+        .career__text {
             font: 800 15px / 150% var(--ff-base);
         }
 
-        &__link {
+        .career__link {
             @include media('tablet-above') {
                 width: max-content;
 

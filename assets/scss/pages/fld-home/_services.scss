@@ -1,14 +1,14 @@
 @use '../../base/media' as *;
 @use '../../base/mixins' as *;
 
-.main--home {
-    .services {
-        &__title {
+.services {
+    &--home {
+        .services__title {
             @include media('laptop-above') {
                 margin-bottom: 40px;
             }
         }
-        &__cards {
+        .services__cards {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             gap: 16px;
@@ -17,7 +17,7 @@
             }
         }
 
-        &__card {
+        .services__card {
             position: relative;
             overflow: hidden;
             height: 420px;

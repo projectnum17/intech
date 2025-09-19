@@ -1,9 +1,9 @@
 @use '../../base/media' as *;
 @use '../../base/mixins' as *;
 
-.main--home {
-    .catalog {
-        &__title {
+.catalog {
+    &--home {
+        .catalog__title {
             @include media('laptop-above') {
                 margin-bottom: 40px;
             }

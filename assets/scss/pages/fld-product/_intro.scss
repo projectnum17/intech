@@ -1,15 +1,8 @@
 @use '../../base/media' as *;
 @use '../../base/mixins' as *;
 
-body:has(.main--product) {
-    .form-popup {
-        height: calc(100vh - 100px);
-        height: calc(100dvh - 100px);
-    }
-}
-
-.main--product {
-    .intro {
+.intro {
+    &--product {
         .container {
             display: flex;
             flex-direction: column-reverse;
@@ -26,16 +19,15 @@ body:has(.main--product) {
             }
         }
 
-        &__content {
+        .intro__content {
             @include media('laptop-above') {
                 max-width: 502px;
                 display: flex;
                 flex-direction: column;
-                // flex-shrink: 0;
             }
         }
 
-        &__subtitle {
+        .intro__subtitle {
             font: 800 15px / 150% var(--ff-base);
             margin-bottom: 12px;
             @include media('laptop-above') {
@@ -43,18 +35,18 @@ body:has(.main--product) {
             }
         }
 
-        &__text {
+        .intro__text {
             font: 800 15px / 150% var(--ff-base);
             margin-bottom: 32px;
         }
 
-        &__title {
+        .intro__title {
             @include media('tablet-above') {
                 margin-bottom: 16px;
             }
         }
 
-        &__link {
+        .intro__link {
             @include media('laptop-above') {
                 span:first-child {
                     padding: 20px;
@@ -62,7 +54,7 @@ body:has(.main--product) {
             }
         }
 
-        &__slider {
+        .intro__slider {
             display: flex;
             min-width: 0;
             flex-direction: column;
@@ -75,7 +67,7 @@ body:has(.main--product) {
             }
         }
 
-        &__gallery {
+        .intro__gallery {
             width: 100%;
 
             .gallery-box {

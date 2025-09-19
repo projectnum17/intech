@@ -1,9 +1,9 @@
 @use '../../base/media' as *;
 @use '../../base/mixins' as *;
 
-.main--about {
-    .advantages {
-        &__title {
+.advantages {
+    &--about {
+        .advantages__title {
             @include media('laptop-above') {
                 margin-bottom: 40px;
             }
