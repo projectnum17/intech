@@ -1,0 +1,13 @@
+@use '../../base/media' as *;
+@use '../../base/mixins' as *;
+
+body:has(.main--product) {
+    .form-popup {
+        height: calc(100vh - 150px);
+        height: calc(100dvh - 150px);
+    }
+}
+
+.main--product {
+    
+}

@@ -79,9 +79,24 @@ const helpers = () => {
         });
     };
 
+    // === Remove if you need
+    const breadCrumbsHandler = () => {
+        const crumbParent = document.querySelector('.breadcrumbs');
+        if (!crumbParent) return;
+
+        const crumbItem = crumbParent.querySelectorAll('li');
+
+        if (crumbItem.length > 2) {
+            crumbParent.classList.add('breadcrumbs--lg')
+        } else {
+            crumbParent.classList.add('breadcrumbs--sm')
+        }
+    };
+
     animateCounters();
     // === Remove if you need
     filterHandler();
+    breadCrumbsHandler();
 };
 
 export default helpers;
