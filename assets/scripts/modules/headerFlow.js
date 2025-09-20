@@ -1,4 +1,19 @@
 export const headerFlow = () => {
+    const handleHeader = () => {
+        const header = document.querySelector('header');
+
+        const scrolledFlow = () => {
+            if (!header) return;
+            if (window.scrollY > 1) {
+                header.classList.add('is-scrolled');
+            } else {
+                header.classList.remove('is-scrolled');
+            }
+        };
+        scrolledFlow();
+        window.addEventListener('scroll', scrolledFlow);
+    };
+
     const selectLangInteractive = () => {
         const langSelector = document.querySelector('.js-lang');
 
@@ -25,7 +40,6 @@ export const headerFlow = () => {
             }
         });
     };
-
 
     const mobileMenuHandler = () => {
         const mobileMenu = document.querySelector('.js-menu');
@@ -54,6 +68,7 @@ export const headerFlow = () => {
         });
     };
 
+    handleHeader();
     mobileMenuHandler();
     selectLangInteractive();
 };

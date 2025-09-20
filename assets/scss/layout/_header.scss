@@ -6,8 +6,11 @@
     padding-block: 16px;
     position: fixed;
     width: 100%;
-    background: var(--dark-color);
-
+    background: transparent;
+    @include transitions(0.2s, ease-in);
+    &.is-scrolled {
+        background: var(--dark-color);
+    }
 
     .container {
         display: flex;
@@ -86,7 +89,7 @@
             a {
                 font: 800 15px / 90% var(--ff-base);
                 text-transform: uppercase;
-                @include transitions(.2s, ease-in);
+                @include transitions(0.2s, ease-in);
                 @include hover {
                     color: var(--accent-color);
                 }
