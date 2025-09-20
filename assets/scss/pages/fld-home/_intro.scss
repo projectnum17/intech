@@ -3,8 +3,10 @@
 
 section.intro--home {
     margin-bottom: 32px;
+    max-width: 2560px;
+    margin: 0 auto 32px;
     @include media('laptop-above') {
-        margin-bottom: 40px;
+        margin: 0 auto 40px;
     }
 }
 

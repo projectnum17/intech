@@ -1,27 +1,27 @@
 @use '../../base/media' as *;
 @use '../../base/mixins' as *;
 
-.allies {
-    &--about {
-        margin-bottom: var(--section-mb);
-        .allies__head {
-            margin-bottom: 32px;
-            @include media('laptop-above') {
-                margin-bottom: 40px;
-                display: flex;
-                align-items: flex-start;
-                gap: 20px;
-            }
-        }
+// .allies {
+//     &--about {
+//         margin-bottom: var(--section-mb);
+//         .allies__head {
+//             margin-bottom: 32px;
+//             @include media('laptop-above') {
+//                 margin-bottom: 40px;
+//                 display: flex;
+//                 align-items: flex-start;
+//                 gap: 20px;
+//             }
+//         }
 
-        .allies__col {
-            @include media('laptop-above') {
-                width: 50%;
-            }
-        }
+//         .allies__col {
+//             @include media('laptop-above') {
+//                 width: 50%;
+//             }
+//         }
 
-        .allies__text {
-            font: 800 15px / 150% var(--ff-base);
-        }
-    }
-}
+//         .allies__text {
+//             font: 800 15px / 150% var(--ff-base);
+//         }
+//     }
+// }
