@@ -86,6 +86,14 @@
             a {
                 font: 800 15px / 90% var(--ff-base);
                 text-transform: uppercase;
+                @include transitions(.2s, ease-in);
+                @include hover {
+                    color: var(--accent-color);
+                }
+
+                &.is-active {
+                    color: var(--accent-color);
+                }
             }
         }
     }

@@ -2,7 +2,6 @@
 @use '../base/mixins' as *;
 
 .allies {
-    margin-bottom: var(--section-mb);
     .allies__head {
         margin-bottom: 32px;
         @include media('laptop-above') {

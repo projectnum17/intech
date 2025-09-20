@@ -35,6 +35,7 @@
             width: 100%;
             @include media('laptop-above') {
                 font-size: 18px;
+                padding: 20px;
             }
         }
 
