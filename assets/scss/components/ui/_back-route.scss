@@ -1,6 +1,16 @@
 @use '../../base/media' as *;
 @use '../../base/mixins' as *;
 
+body:not(:has(.breadcrumbs)) {
+    .back {
+        margin-bottom: 32px;
+
+        @include media('laptop-above') {
+            margin-bottom: 40px;
+        }
+    }
+}
+
 .back {
     max-width: var(--container-width);
     padding-inline: var(--container-padding);

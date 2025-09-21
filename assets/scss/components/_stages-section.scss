@@ -1,0 +1,43 @@
+@use '../base/media' as *;
+@use '../base/mixins' as *;
+
+.stages {
+    &__head {
+        margin-bottom: 20px;
+
+        @include media('tablet-above') {
+            display: flex;
+            align-items: flex-end;
+            gap: 12px;
+            justify-content: space-between;
+        }
+
+        @include media('laptop-above') {
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__title {
+        @include media('tablet-above') {
+            margin-bottom: 0;
+        }
+    }
+
+    &__cta {
+        @include media('tablet-above') {
+            width: max-content;
+            flex-shrink: 0;
+
+            span:first-child {
+                padding: 13px 20px;
+            }
+        }
+
+        @include media('laptop-above') {
+            span:first-child {
+                padding: 21px 49px;
+            }
+        }
+    }
+}

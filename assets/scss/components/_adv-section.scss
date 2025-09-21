@@ -1,0 +1,24 @@
+@use '../base/media' as *;
+@use '../base/mixins' as *;
+
+.advantages {
+    padding-top: var(--section-mb);
+    .advantages__title {
+        @include media('laptop-above') {
+            margin-bottom: 40px;
+        }
+    }
+
+    &--compact {
+        padding-top: 0;
+
+        .advantages-cards__item {
+            @include media('tablet-above') {
+                padding: 33px;
+            }
+            @include media('laptop-above') {
+                padding: 60px 16px;
+            }
+        }
+    }
+}

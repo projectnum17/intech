@@ -1,0 +1,122 @@
+@use '../base/media' as *;
+@use '../base/mixins' as *;
+.feature {
+    position: relative;
+    overflow: hidden;
+    max-width: 2560px;
+    margin: 0 auto;
+
+    .container {
+        position: relative;
+    }
+
+    &__deco {
+        position: absolute;
+        pointer-events: none;
+        z-index: -1;
+        height: 300px;
+        object-fit: cover;
+        transform: translateY(-50%);
+        left: -550px;
+        top: -53px;
+        width: 2500px;
+        @include media('tablet-above') {
+            left: -300px;
+        }
+
+        @include media('laptop-above') {
+            width: 1923px;
+            height: 100%;
+            object-fit: inherit;
+            transform: translateY(0%);
+            left: -28%;
+            top: -35%;
+            transform: scale(1.5);
+        }
+    }
+
+    &__thumbnail {
+        height: 266px;
+        margin-bottom: 20px;
+        @include media('laptop-above') {
+            height: 523px;
+        }
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &.laptop--hidden {
+            @include media('laptop-above') {
+                display: none;
+            }
+        }
+
+        &.laptop--visible {
+            display: none;
+
+            @include media('laptop-above') {
+                display: block;
+            }
+        }
+    }
+
+    &__content {
+        @include media('laptop-above') {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            gap: 40px;
+            justify-content: space-between;
+        }
+    }
+
+    &__col {
+        @include media('laptop-above') {
+            width: 100%;
+        }
+        &:first-child {
+            @include media('laptop-above') {
+                max-width: 636px;
+            }
+        }
+
+        &:last-child {
+            @include media('laptop-above') {
+                max-width: 676px;
+            }
+        }
+    }
+
+    &__title {
+        @include media('laptop-above') {
+            margin-bottom: 40px;
+        }
+
+        br {
+            display: none;
+            @include media('laptop-above') {
+                display: block;
+            }
+        }
+    }
+
+    &__cta {
+        margin-bottom: 16px;
+        @include media('laptop-above') {
+            width: max-content;
+
+            span:first-child {
+                padding: 20px 48px;
+            }
+        }
+    }
+
+    &__text {
+        font: 800 15px / 150% var(--ff-base);
+        &:not(:last-of-type) {
+            margin-bottom: 24px;
+        }
+    }
+}

@@ -36,6 +36,7 @@
             @include media('laptop-above') {
                 font-size: 18px;
                 padding: 20px;
+                line-height: 130%;
             }
         }
 

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.min.css">
+    <script defer type="module" src="./assets/scripts/script.js"></script>
+    <title>Intech | Credit</title>
+</head>
+
+<body>
+    <div class="form-popup js-form-popup">
+        <img class="form-popup__bg" src="./assets/images/icons/bg-form.svg" alt="BG">
+        <div class="form-popup__success js-form-success">
+            <div class="form-popup__head">
+                <div class="form-popup__logo">
+                    <img src="./assets/images/icons/logo.svg" alt="Logo">
+                </div>
+                <button type="button" class="form-popup__close js-form-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4L20 20" stroke="white" stroke-width="1.5" />
+                        <path d="M4 20L20 4" stroke="white" stroke-width="1.5" />
+                    </svg>
+                </button>
+            </div>
+            <div class="form-popup__inner">
+                <p class="form-popup__title">
+                    Наш менеджер зв’яжеться з вами найближчим часом, щоб уточнити деталі та надати відповідь.
+                </p>
+                <a href="/" class="form-popup__link cta">
+                    <span>НА ГОЛОВНУ</span>
+                    <span>
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.5 4.19V5.81H5.81V9.5H4.19V5.81H0.5V4.19H4.19V0.5H5.81V4.19H9.5Z" fill="white">
+                            </path>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="form-popup__content js-form-content">
+            <div class="form-popup__head">
+                <div class="form-popup__logo">
+                    <img src="./assets/images/icons/logo.svg" alt="Logo">
+                </div>
+                <button type="button" class="form-popup__close js-form-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4L20 20" stroke="white" stroke-width="1.5" />
+                        <path d="M4 20L20 4" stroke="white" stroke-width="1.5" />
+                    </svg>
+                </button>
+            </div>
+            <div class="form-popup__head">
+                <p class="form-popup__title">Отримати пропозицію</p>
+                <button type="button" class="form-popup__close js-form-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4L20 20" stroke="white" stroke-width="1.5" />
+                        <path d="M4 20L20 4" stroke="white" stroke-width="1.5" />
+                    </svg>
+                </button>
+            </div>
+            <form class="form-popup__submit js-form">
+                <div class="form-popup__data">
+                    <div class="form-popup__wrapper">
+                        <div class="form-popup__field">
+                            <label for="nameField" class="form-popup__label">Ім’я</label>
+                            <input name="nameField" id="nameField" type="text" class="form-popup__input"
+                                placeholder="Віталій">
+                        </div>
+                        <div class="form-popup__field">
+                            <label for="companyField" class="form-popup__label">
+                                Назва компанії
+                            </label>
+                            <input name="companyField" id="companyField" type="text" class="form-popup__input"
+                                placeholder="INTECH">
+                        </div>
+                    </div>
+                    <div class="form-popup__field">
+                        <label for="mailField" class="form-popup__label">Email</label>
+                        <input name="mailField" id="mailField" type="email" class="form-popup__input"
+                            placeholder="example@example.com">
+                    </div>
+                    <div class="form-popup__field">
+                        <label for="phoneField" class="form-popup__label">Телефон</label>
+                        <input name="phoneField" id="phoneField" type="tel" class="form-popup__input"
+                            placeholder="+380 73 066 23 45">
+                    </div>
+                    <div class="form-popup__field">
+                        <label for="commentField" class="form-popup__label">Коментар</label>
+                        <input name="commentField" id="commentField" type="text" class="form-popup__input"
+                            placeholder="Подзвоніть мені швидше!">
+                    </div>
+                </div>
+                <div class="form-popup__mta">
+                    <div class="form-popup__check">
+                        <input id="privacyCheck" name="privacyCheck" type="checkbox">
+                        <label for="privacyCheck">
+                            <p>
+                                Я ознайомлений(-на) з <a href="javascript:void(0)">політикою конфіденційності</a> і даю
+                                згоду на
+                                обробку моїх персональних даних
+                            </p>
+                        </label>
+                    </div>
+                    <button type="submit" class="form-popup__btn cta">
+                        <span>Надіслати</span>
+                        <span>
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 4.19V5.81H5.81V9.5H4.19V5.81H0.5V4.19H4.19V0.5H5.81V4.19H9.5Z"
+                                    fill="white">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="mobile-menu js-menu">
+        <div class="mobile-menu__content">
+            <img class="mobile-menu__deco" src="./assets/images/world-map_2.svg" alt="Decoration">
+            <ul class="mobile-menu__list">
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="javascript: void(0)">послуги</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="javascript: void(0)">Карʼєра</a></li>
+                <li><a href="javascript: void(0)">Блог</a></li>
+                <li><a href="javascript: void(0)">FAQ</a></li>
+                <li><a href="javascript: void(0)">Контакти</a></li>
+            </ul>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="header__logo">
+                <img src="./assets/images/icons/logo.svg" alt="Logo">
+            </a>
+            <div class="header__panel">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li>
+                            <a href="about.html">Про нас</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">послуги</a>
+                        </li>
+                        <li>
+                            <a href="catalog.html">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Блог</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Контакти</a>
+                        </li>
+                    </ul>
+                    <ul class="header__lang js-lang">
+                        <li>
+                            <a href="javascript:void(0)">
+                                UA
+                                <span>🇺🇦</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                EN
+                                <span>🇬🇧</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button type="button" class="header__burger js-toggle-menu">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="feature">
+            <div class="back">
+                <a href="javascript:void(0)" class="back__route">
+                    <span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 12H4M4 12L10 18M4 12L10 6" stroke="white" stroke-width="1.5"
+                                stroke-linecap="square"></path>
+                        </svg>
+                    </span>
+                    <span>Повернутись</span>
+                </a>
+            </div>
+            <div class="container">
+                <img src="./assets/images/feature-deco.svg" alt="Decoration" class="feature__deco">
+                <div class="feature__content">
+                    <div class="feature__col">
+                        <h2 class="feature__title h2">
+                            Кредитування <br> спецтехніки під вас
+                        </h2>
+                        <div class="feature__thumbnail laptop--hidden">
+                            <img width="343" height="266" src="./assets/images/thumb_credit.jpg" alt="Thumbnail">
+                        </div>
+                        <button class="feature__cta cta js-cta">
+                            <span>звʼязатися з нами</span>
+                            <span>
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.5 4.19V5.81H5.81V9.5H4.19V5.81H0.5V4.19H4.19V0.5H5.81V4.19H9.5Z"
+                                        fill="white">
+                                    </path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="feature__col">
+                        <p class="feature__text">
+                            Кредитування спецтехніки — це оптимальне рішення для компаній, які хочуть оновити або
+                            розширити
+                            свій автопарк, але не мають змоги одразу сплатити повну вартість техніки.
+                        </p>
+                        <p class="feature__text">
+                            Завдяки співпраці з надійними банками та фінансовими партнерами, клієнти можуть придбати
+                            нову
+                            або вживану техніку в кредит на вигідних умовах. Це дозволяє розпочати роботу відразу після
+                            покупки, не чекаючи накопичення потрібної суми.
+                        </p>
+                        <p class="feature__text">
+                            Процес оформлення кредиту максимально простий: компанія допомагає з підбором банку, готує
+                            необхідний пакет документів, консультує щодо умов та супроводжує клієнта на всіх етапах.
+                        </p>
+                        <p class="feature__text">
+                            Умови кредитування можуть бути адаптовані під потреби замовника — це стосується як термінів
+                            погашення (коротко- або довгострокових), так і суми першого внеску. Після погодження умов і
+                            підписання договору клієнт отримує техніку у найкоротший термін і може одразу запускати її в
+                            роботу.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature__thumbnail laptop--visible">
+                    <img width="343" height="266" src="./assets/images/thumb_credit.jpg" alt="Thumbnail">
+                </div>
+            </div>
+        </section>
+        <section class="advantages advantages--compact">
+            <div class="container">
+                <p class="section-subtitle">переваги</p>
+                <h2 class="advantages__title h2">переваги Кредитування</h2>
+                <div class="advantages-cards">
+                    <div class="advantages-cards__item">
+                        <h3 class="advantages-cards__title h4">
+                            Мінімальне фінансове навантаження на старті
+                        </h3>
+                        <p class="advantages-cards__text">
+                            Не потрібно відразу витрачати велику суму — достатньо внести початковий внесок, решту можна
+                            виплачувати поступово. Це зручно, якщо ви тільки запускаєте новий проєкт.
+                        </p>
+                    </div>
+                    <div class="advantages-cards__item">
+                        <h3 class="advantages-cards__title h4">
+                            Збереження оборотних
+                            коштів
+                        </h3>
+                        <p class="advantages-cards__text">
+                            Це дозволяє зберігати фінансову гнучкість і не «вимивати» бюджет, що особливо важливо в
+                            сезон пікового навантаження або під час виконання великих обсягів робіт.
+                        </p>
+                    </div>
+                    <div class="advantages-cards__item">
+                        <h3 class="advantages-cards__title h4">
+                            Більше можливостей для зростання
+                        </h3>
+                        <p class="advantages-cards__text">
+                            Нове обладнання означає більш швидку, ефективну і якісну роботу. Це не лише підвищує
+                            репутацію компанії на ринку, а й дозволяє брати участь у проєктах вищого рівня.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stages">
+            <div class="container">
+                <p class="section-subtitle">Етапи</p>
+                <div class="stages__head">
+                    <h2 class="stages__title h2">Етапи Кредитування</h2>
+                    <button class="stages__cta cta js-cta">
+                        <span>звʼязатися з нами</span>
+                        <span>
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 4.19V5.81H5.81V9.5H4.19V5.81H0.5V4.19H4.19V0.5H5.81V4.19H9.5Z"
+                                    fill="white">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <ul class="stages-list">
+                    <li class="stages-list__item">
+                        <p>Звернення до менеджера</p>
+                        <p>
+                            Перший крок — це зв’язок із нашою командою. Ви повідомляєте, яка техніка вас цікавить, а
+                            менеджер допомагає обрати оптимальну модель і детально розповідає про можливості
+                            кредитування. Уже на цьому етапі ви отримаєте перші розрахунки — скільки буде коштувати
+                            техніка в кредит, які умови внеску та графік платежів.
+                        </p>
+                    </li>
+                    <li class="stages-list__item">
+                        <p>
+                            Підготовка документів
+                        </p>
+                        <p>
+                            Для оформлення кредиту потрібен стандартний набір документів — це може бути фінансова
+                            звітність компанії, реєстраційні дані, ІПН або інші базові документи. Наші фахівці
+                            допоможуть вам зібрати все необхідне швидко й без зайвих складнощів. Немає потреби самому
+                            розбиратись у всіх нюансах — ми вас супроводжуємо на кожному етапі.
+                        </p>
+                    </li>
+                    <li class="stages-list__item">
+                        <p>Розгляд заявки банком</p>
+                        <p>
+                            Після подачі документів банк проводить перевірку та оцінює вашу платоспроможність. Залежно
+                            від обсягу заявки, процес може тривати від кількох годин до кількох днів. Ми зацікавлені в
+                            тому, щоб усе пройшло якомога швидше, тому співпрацюємо лише з перевіреними та оперативними
+                            фінансовими партнерами.
+                        </p>
+                    </li>
+                    <li class="stages-list__item">
+                        <p>Підписання договору</p>
+                        <p>
+                            Після затвердження кредиту відбувається підписання договору, в якому чітко прописані всі
+                            умови: терміни, сума, щомісячні платежі, графік погашення, відсоткова ставка та розмір
+                            авансу. Жодних «прихованих умов» — усе відкрито та прозоро.
+                        </p>
+                    </li>
+                    <li class="stages-list__item">
+                        <p>Оплата початкового внеску</p>
+                        <p>
+                            Після підписання договору клієнт вносить узгоджений аванс. Зазвичай він становить частину
+                            вартості техніки, яку ви одразу оплачуєте. Решта суми покривається кредитом.
+                        </p>
+                    </li>
+                    <li class="stages-list__item">
+                        <p>Отримання техніки</p>
+                        <p>
+                            Як тільки перший платіж надійшов — техніка передається у ваше користування. Ми організовуємо
+                            доставку, реєстрацію, і за потреби — інструктаж по запуску та експлуатації. Ви одразу можете
+                            вводити машину в роботу й починати заробляти.
+                        </p>
+                    </li>
+                    <li class="stages-list__item">
+                        <p>Початок роботи та погашення кредиту</p>
+                        <p>
+                            Ви користуєтеся технікою у повному обсязі, як власною, і поступово сплачуєте щомісячні
+                            внески. Наша команда завжди на зв’язку, якщо потрібна консультація або сервісна підтримка.
+                            Коли весь кредит погашено — техніка повністю переходить у вашу власність.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__head">
+                <p class="footer__title">
+                    Будуємо <span>довіру</span> та піднімаємо ваш <span>бізнес</span> разом, день за днем
+                </p>
+                <div class="footer__arrow">
+                    <svg width="78" height="79" viewBox="0 0 78 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M74 78.3552C76.2091 78.3552 78 76.5643 78 74.3552L78 38.3552C78 36.1461 76.2091 34.3552 74 34.3552C71.7908 34.3552 70 36.1461 70 38.3552L70 70.3552L38 70.3552C35.7908 70.3552 34 72.1461 34 74.3552C34 76.5643 35.7908 78.3552 38 78.3552L74 78.3552ZM3.28931 3.64453L0.46088 6.47296L71.1716 77.1836L74 74.3552L76.8284 71.5268L6.11773 0.816104L3.28931 3.64453Z"
+                            fill="white" />
+                    </svg>
+                </div>
+            </div>
+            <div class="footer__inner">
+                <a href="javascript: void(0)" class="footer__logo">
+                    <img src="./assets/images/icons/logo.svg" alt="Logo">
+                </a>
+                <div class="footer__menus">
+                    <div class="footer__menu">
+                        <p class="footer__subtitle">Меню</p>
+                        <ul class="footer__list">
+                            <li>
+                                <a href="about.html">про нас</a>
+                            </li>
+                            <li>
+                                <a href="catalog.html">каталог</a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0)">послуги</a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0)">блог</a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0)">faq</a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0)">контакти</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu">
+                        <p class="footer__subtitle">контакти</p>
+                        <ul class="footer__list">
+                            <li>
+                                <a href="javascript: void(0)">Адреса: вул. Назва., Місто, Країна</a>
+                            </li>
+                            <li>
+                                <a href="tel:+380001234567">+380 (00) 123-45-67</a>
+                            </li>
+                            <li>
+                                <a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu">
+                        <p class="footer__subtitle">Соц мережі</p>
+                        <ul class="footer__list">
+                            <li>
+                                <a href="javascript: void(0)">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0)">LinkedIn</a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0)">Youtube</a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0)">Twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__info">
+                <p class="footer__copy">©2025 seafarers. All rights reserved</p>
+                <div class="footer__legals">
+                    <a href="javascript: void(0)">Політика конфіденційності </a>
+                    <span>|</span>
+                    <a href="javascript: void(0)">Політика щодо файлів cookie</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
