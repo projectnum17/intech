@@ -1,0 +1,18 @@
+@use '../../base/media' as *;
+@use '../../base/mixins' as *;
+
+.library {
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 24px;
+        @include media('tablet-above') {
+            gap: 20px;
+        }
+        @include media('laptop-above') {
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+    }
+}

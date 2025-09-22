@@ -1,0 +1,56 @@
+@use '../base/media' as *;
+@use '../base/mixins' as *;
+
+.filtered-btns {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &__btn {
+        font: 800 15px / 150% var(--ff-base);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        padding: 10px 15px;
+        border: 1px solid #fff;
+        color: #fff;
+        @include transitions(0.2s, ease-in);
+
+        @include media('laptop-above') {
+            padding: 24px;
+        }
+
+        &:first-child {
+            text-transform: uppercase;
+        }
+
+        &.is-active {
+            background: var(--accent-light);
+            border-color: var(--accent-light);
+        }
+    }
+
+    &--compact {
+        @include media('laptop-above') {
+            margin-bottom: 40px;
+        }
+        .filtered-btns__btn {
+            line-height: 150%;
+            padding: 10px 16px;
+
+            @include media('laptop-above') {
+                padding: 13px 39px;
+                font-size: 18px;
+                line-height: 110%;
+            }
+        }
+    }
+}

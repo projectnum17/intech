@@ -1,0 +1,51 @@
+@use '../../base/media' as *;
+@use '../../base/mixins' as *;
+
+.intro {
+    &--blog-page {
+        padding-top: 101px;
+        margin-bottom: 32px;
+        @include media('tablet-above') {
+            padding-top: 117px;
+        }
+
+        @include media('laptop-above') {
+            margin-bottom: 40px;
+        }
+
+        .news-block {
+            margin-bottom: 0;
+        }
+
+        .intro__title {
+            margin-bottom: 16px;
+
+            @include media('laptop-above') {
+                margin-bottom: 0;
+                width: 50%;
+                flex: 1;
+            }
+        }
+
+        .intro__about {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .intro__head {
+            margin-bottom: 32px;
+            @include media('laptop-above') {
+                margin-bottom: 90px;
+            }
+        }
+
+        .intro__text {
+            font: 800 15px / 150% var(--ff-base);
+            @include media('laptop-above') {
+                width: 50%;
+                flex: 1;
+            }
+        }
+    }
+}

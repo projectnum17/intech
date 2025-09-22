@@ -1,0 +1,118 @@
+@use '../../base/media' as *;
+@use '../../base/mixins' as *;
+
+.pagination-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include media('laptop-above') {
+        gap: 40px;
+    }
+
+    &__more {
+        font: 800 18px / 130% var(--ff-base);
+        text-transform: uppercase;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: 1px solid #fff;
+        color: #fff;
+        background: transparent;
+        @include transitions(0.2s, ease-in);
+        @include hover {
+            background: var(--accent-light);
+            border-color: var(--accent-light);
+        }
+        @include media('laptop-above') {
+            padding: 19px;
+        }
+    }
+
+    &__controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+
+    }
+    &__control {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+    }
+
+    &__btn {
+        font: 800 15px / 150% var(--ff-base);
+        text-transform: uppercase;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        color: #fff;
+        @include transitions(0.2s, ease-in);
+        @include media('laptop-above') {
+            width: 40px;
+            height: 40px;
+        }
+
+        &.is-active {
+            background: var(--accent-light);
+        }
+    }
+
+    &__prev,
+    &__next {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        span {
+            &.arrow {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 44px;
+                height: 44px;
+                @include transitions(0.2s, ease-in);
+                @include media('laptop-above') {
+                    width: 63px;
+                    height: 63px;
+                }
+            }
+
+            &.text {
+                display: none;
+                @include media('laptop-above') {
+                    font: 800 18px / 130% var(--ff-base);
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-transform: uppercase;
+                    padding: 19px;
+                    border: 1px solid var(--accent-light);
+                    @include transitions(0.2s, ease-in);
+                    @include hover {
+                        background: var(--accent-light);
+                    }
+                }
+            }
+        }
+
+        &.is-active {
+            span.arrow {
+                background: var(--accent-light);
+            }
+        }
+    }
+}

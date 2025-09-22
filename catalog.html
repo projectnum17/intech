@@ -294,12 +294,14 @@
         </section>
         <section class="filter filter--catalog">
             <div class="container">
-                <div class="filter__btns">
-                    <button type="button" class="filter__btn js-filter is-active">ВСІ</button>
-                    <button type="button" class="filter__btn js-filter">Всюдихідні крани</button>
-                    <button type="button" class="filter__btn js-filter">Міські крани</button>
-                    <button type="button" class="filter__btn js-filter">Короткобазні крани</button>
-                    <button type="button" class="filter__btn js-filter">Гусеничні крани</button>
+                <div class="filtered-btns">
+                    <button type="button" class="filtered-btns__btn js-filter is-active">
+                        ВСІ
+                    </button>
+                    <button type="button" class="filtered-btns__btn js-filter">Всюдихідні крани</button>
+                    <button type="button" class="filtered-btns__btn js-filter">Міські крани</button>
+                    <button type="button" class="filtered-btns__btn js-filter">Короткобазні крани</button>
+                    <button type="button" class="filtered-btns__btn js-filter">Гусеничні крани</button>
                 </div>
                 <div class="filter__cards">
                     <div class="product-card">
@@ -519,37 +521,39 @@
                         </a>
                     </div>
                 </div>
-                <button type="button" class="filter__more">завантажити ще...</button>
-                <div class="filter__pagination">
-                    <div class="filter__pagination-control">
-                        <button type="button" class="filter__pagination-prev">
-                            <span class="arrow">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20 12H4M4 12L10 18M4 12L10 6" stroke="white" stroke-width="1.5"
-                                        stroke-linecap="square" />
-                                </svg>
-                            </span>
-                            <span class="text">Попередня</span>
-                        </button>
-                    </div>
-                    <div class="filter__pagination-btns">
-                        <button type="button" class="filter__pagination-btn is-active">1</button>
-                        <button type="button" class="filter__pagination-btn">2</button>
-                        <button type="button" class="filter__pagination-btn">3</button>
-                        <button type="button" class="filter__pagination-btn">4</button>
-                    </div>
-                    <div class="filter__pagination-control">
-                        <button type="button" class="filter__pagination-next is-active">
-                            <span class="text">Наступна</span>
-                            <span class="arrow">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="white" stroke-width="1.5"
-                                        stroke-linecap="square" />
-                                </svg>
-                            </span>
-                        </button>
+                <div class="pagination-block">
+                    <button type="button" class="pagination-block__more">завантажити ще...</button>
+                    <div class="pagination-block__controls">
+                        <div class="pagination-block__control">
+                            <button type="button" class="pagination-block__prev">
+                                <span class="arrow">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 12H4M4 12L10 18M4 12L10 6" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="square" />
+                                    </svg>
+                                </span>
+                                <span class="text">Попередня</span>
+                            </button>
+                        </div>
+                        <div class="pagination-block__btns">
+                            <button type="button" class="pagination-block__btn is-active">1</button>
+                            <button type="button" class="pagination-block__btn">2</button>
+                            <button type="button" class="pagination-block__btn">3</button>
+                            <button type="button" class="pagination-block__btn">4</button>
+                        </div>
+                        <div class="pagination-block__control">
+                            <button type="button" class="pagination-block__next is-active">
+                                <span class="text">Наступна</span>
+                                <span class="arrow">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="square" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
