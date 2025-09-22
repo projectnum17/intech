@@ -1,0 +1,99 @@
+@use '../../base/media' as *;
+@use '../../base/mixins' as *;
+
+.error {
+    padding-top: 101px;
+
+    @include media('tablet-above') {
+        padding-top: 117px;
+        overflow: hidden;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 32px;
+        @include media('tablet-above') {
+            flex-direction: row;
+            gap: 17px;
+        }
+
+        @include media('laptop-above') {
+            align-items: center;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        @include media('tablet-above') {
+            flex-shrink: 0;
+        }
+
+        @include media('laptop-above') {
+            flex-shrink: inherit;
+        }
+    }
+
+    &__subtitle {
+        font: 500 146px / 110% var(--ff-pixel);
+        text-align: center;
+        text-transform: uppercase;
+        order: 1;
+        margin-bottom: 32px;
+        color: var(--accent-light);
+
+        @include media('tablet-above') {
+            margin-bottom: 24px;
+            line-height: 100%;
+            font-size: 160px;
+        }
+
+        @include media('laptop-above') {
+            order: 3;
+            font-size: 182px;
+            line-height: 110%;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__title {
+        order: 2;
+        font: 800 26px / 130% var(--ff-base);
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        @include media('laptop-above') {
+            order: 1;
+            font-size: 32px;
+            line-height: 120%;
+        }
+    }
+
+    &__text {
+        order: 3;
+        font: 800 15px / 150% var(--ff-base);
+        margin-bottom: 24px;
+        @include media('laptop-above') {
+            order: 2;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__link {
+        order: 4;
+    }
+
+    &__thumb {
+        max-width: 373px;
+        margin: 0 auto;
+        @include media('tablet-above') {
+            flex-shrink: 0;
+            max-width: 406px;
+        }
+
+        @include media('laptop-above') {
+            flex-shrink: inherit;
+            max-width: 904px;
+        }
+    }
+}

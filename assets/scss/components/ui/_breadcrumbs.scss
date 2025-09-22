@@ -43,7 +43,7 @@ body:has(.back) {
 
     @include media('tablet-above') {
         padding-top: 117px;
-        margin-bottom: 9px;
+        margin-bottom: 32px;
     }
 
     @include media('laptop-above') {
