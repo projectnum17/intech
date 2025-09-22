@@ -1,0 +1,50 @@
+@use '../../base/media' as *;
+@use '../../base/mixins' as *;
+
+.faq {
+    padding-top: 101px;
+
+    @include media('tablet-above') {
+        padding-top: 117px;
+    }
+
+    &__title {
+        margin-bottom: 0;
+        @include media('laptop-above') {
+            width: 50%;
+            flex: 1;
+        }
+    }
+
+    &__text {
+        font: 800 15px / 150% var(--ff-base);
+        @include media('laptop-above') {
+            width: 50%;
+            flex: 1;
+        }
+    }
+
+    &__head {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 32px;
+
+        @include media('laptop-above') {
+            margin-bottom: 40px;
+            gap: 40px;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
+
+    &__list {
+        counter-reset: item;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        @include media('laptop-above') {
+            gap: 32px;
+        }
+    }
+}

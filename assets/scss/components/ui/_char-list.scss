@@ -40,7 +40,7 @@
             font: 800 15px / 110% var(--ff-base);
             text-transform: uppercase;
             display: inline-flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 16px;
             counter-increment: item;
 
