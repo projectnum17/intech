@@ -1,0 +1,114 @@
+@use '../../base/media' as *;
+@use '../../base/mixins' as *;
+
+.vacancies {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        @include media('laptop-above') {
+            gap: 40px;
+        }
+    }
+
+    &__item {
+        padding-bottom: 21px;
+        border-bottom: 1px solid #fff;
+
+        @include media('laptop-above') {
+            padding-bottom: 40px;
+        }
+    }
+
+    &__button {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 8px;
+        width: 100%;
+        @include hover {
+            .vacancies__btn {
+                background: var(--accent-color);
+
+                svg {
+                    transform: rotate(45deg);
+                    color: #fff;
+                }
+            }
+        }
+
+        @include media('laptop-above') {
+            gap: 20px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        text-align: left;
+        @include media('laptop-above') {
+            gap: 24px;
+        }
+    }
+
+    &__location {
+        font: 800 15px / 150% var(--ff-base);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        @include media('laptop-above') {
+            gap: 10px;
+        }
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        display: inline-flex;
+        flex-shrink: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__title {
+        font: 800 18px / 110% var(--ff-base);
+        text-transform: uppercase;
+        @include media('laptop-above') {
+            font-size: 32px;
+            line-height: 120%;
+        }
+    }
+
+    &__salary {
+        font: 800 15px / 150% var(--ff-base);
+        @include media('laptop-above') {
+            font-size: 18px;
+            line-height: 110%;
+        }
+    }
+
+    &__btn {
+        width: 56px;
+        height: 56px;
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        @include transitions(0.2s, ease-in);
+
+        svg {
+            display: inline-flex;
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            color: var(--accent-color);
+            @include transitions(0.2s, ease-in);
+        }
+    }
+}

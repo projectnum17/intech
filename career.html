@@ -10,6 +10,52 @@
 </head>
 
 <body>
+    <div class="vacancy" id="vacancy-modal">
+        <div class="vacancy__content">
+            <div class="vacancy__head">
+                <p class="section-subtitle">Вакансія</p>
+                <button type="button" class="vacancy__close" data-close-modal>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4L20 20" stroke="white" stroke-width="1.5"></path>
+                        <path d="M4 20L20 4" stroke="white" stroke-width="1.5"></path>
+                    </svg>
+                </button>
+            </div>
+            <h2 class="vacancy__title" id="vacancy-title"></h2>
+            <div class="vacancy__location">
+                <img width="27" height="27" src="./assets/images/icons/ico-pin.svg" alt="Icon">
+                <p id="vacancy-location"></p>
+            </div>
+            <div class="vacancy__conditions">
+                <p class="vacancy__salary" id="vacancy-salary"></p>
+                <p class="vacancy__format">
+                    формат:
+                    <span id="vacancy-format"></span>
+                </p>
+            </div>
+            <div class="vacancy__list">
+                <div class="vacancy__section">
+                    <h3>Що ти робитимеш:</h3>
+                    <div id="vacancy-responsibilities"></div>
+                </div>
+
+                <div class="vacancy__section">
+                    <h3>Що ми очікуємо:</h3>
+                    <div id="vacancy-expectations"></div>
+                </div>
+
+                <div class="vacancy__section">
+                    <h3>Що пропонуємо:</h3>
+                    <div id="vacancy-offer"></div>
+                </div>
+            </div>
+            <div class="vacancy__footer">
+                <p>Щоб відгукнутися на вакансію відправте нам на email своє резюме.</p>
+                <a href="mailto:YOUREMAIL@GMAIL.COM">YOUREMAIL@GMAIL.COM</a>
+            </div>
+
+        </div>
+    </div>
     <div class="mobile-menu js-menu">
         <div class="mobile-menu__content">
             <img class="mobile-menu__deco" src="./assets/images/world-map_2.svg" alt="Decoration">
@@ -127,6 +173,129 @@
                         </p>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="vacancies">
+            <div class="container">
+                <p class="section-subtitle">Карʼєра</p>
+                <ul class="vacancies__list">
+                    <li class="vacancies__item">
+                        <button class="vacancies__button js-vacancy"
+                            data-location="Київ, з можливістю відряджень по Україні" data-title="Менеджер з продажу"
+                            data-salary="від 25 000 грн + % від продажів" data-format="Повна зайнятість"
+                            data-responsibilities="Працюватимеш із теплими та новими клієнтами (B2B, будівництво, агро, промисловість); Проводитимеш презентації техніки, виїзди на об’єкти; Формуватимеш комерційні пропозиції та супроводжуватимеш угоди до підписання; Підтримуватимеш довгострокові відносини з клієнтами"
+                            data-expectations="Досвід роботи в B2B-продажах від 2 років; Розуміння технічної сфери (буде перевагою); Комунікаційні навички та орієнтація на результат; Готовність до відряджень"
+                            data-offer="Конкурентну заробітну плату (ставка + % від продажів); Навчання та підтримку з боку команди інженерів; Можливість впливати на великі проєкти; Офіційне працевлаштування та соцпакет">
+                            <div class="vacancies__content">
+                                <p class="vacancies__location">
+                                    <span class="vacancies__icon">
+                                        <img src="./assets/images/icons/ico-pin.svg" alt="Icon">
+                                    </span>
+                                    <span>Київ, з можливістю відряджень по Україні</span>
+                                </p>
+                                <p class="vacancies__title">Менеджер з продажу</p>
+                                <p class="vacancies__salary">
+                                    від 25 000 грн + % від продажів
+                                </p>
+                            </div>
+
+                            <div class="vacancies__btn">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 18.1125L18 6.11255M18 6.11255H10M18 6.11255V14.1125" stroke="#325FEC"
+                                        stroke-width="1.5" stroke-linecap="square" />
+                                </svg>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="vacancies__item">
+                        <button class="vacancies__button js-vacancy" data-location="м. Київ"
+                            data-title="Логіст з постачання запчастин" data-salary="від 20 000 грн/міс"
+                            data-format="Повна зайнятість"
+                            data-responsibilities="Працюватимеш із теплими та новими клієнтами (B2B, будівництво, агро, промисловість); Проводитимеш презентації техніки, виїзди на об’єкти; Формуватимеш комерційні пропозиції та супроводжуватимеш угоди до підписання; Підтримуватимеш довгострокові відносини з клієнтами"
+                            data-expectations="Досвід роботи в B2B-продажах від 2 років; Розуміння технічної сфери (буде перевагою); Комунікаційні навички та орієнтація на результат; Готовність до відряджень"
+                            data-offer="Конкурентну заробітну плату (ставка + % від продажів); Навчання та підтримку з боку команди інженерів; Можливість впливати на великі проєкти; Офіційне працевлаштування та соцпакет">
+                            <div class="vacancies__content">
+                                <p class="vacancies__location">
+                                    <span class="vacancies__icon">
+                                        <img src="./assets/images/icons/ico-pin.svg" alt="Icon">
+                                    </span>
+                                    <span>м. Київ</span>
+                                </p>
+                                <p class="vacancies__title">Логіст з постачання запчастин</p>
+                                <p class="vacancies__salary">
+                                    від 20 000 грн/міс
+                                </p>
+                            </div>
+
+                            <div class="vacancies__btn">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 18.1125L18 6.11255M18 6.11255H10M18 6.11255V14.1125" stroke="#325FEC"
+                                        stroke-width="1.5" stroke-linecap="square" />
+                                </svg>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="vacancies__item">
+                        <button class="vacancies__button js-vacancy" data-location="м. Київ"
+                            data-title="Сервісний інженер" data-salary="від 30 000 грн/міс + бонуси"
+                            data-format="Повна зайнятість"
+                            data-responsibilities="Працюватимеш із теплими та новими клієнтами (B2B, будівництво, агро, промисловість); Проводитимеш презентації техніки, виїзди на об’єкти; Формуватимеш комерційні пропозиції та супроводжуватимеш угоди до підписання; Підтримуватимеш довгострокові відносини з клієнтами"
+                            data-expectations="Досвід роботи в B2B-продажах від 2 років; Розуміння технічної сфери (буде перевагою); Комунікаційні навички та орієнтація на результат; Готовність до відряджень"
+                            data-offer="Конкурентну заробітну плату (ставка + % від продажів); Навчання та підтримку з боку команди інженерів; Можливість впливати на великі проєкти; Офіційне працевлаштування та соцпакет">
+                            <div class="vacancies__content">
+                                <p class="vacancies__location">
+                                    <span class="vacancies__icon">
+                                        <img src="./assets/images/icons/ico-pin.svg" alt="Icon">
+                                    </span>
+                                    <span>м. Київ</span>
+                                </p>
+                                <p class="vacancies__title">Сервісний інженер</p>
+                                <p class="vacancies__salary">
+                                    від 30 000 грн/міс + бонуси
+                                </p>
+                            </div>
+
+                            <div class="vacancies__btn">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 18.1125L18 6.11255M18 6.11255H10M18 6.11255V14.1125" stroke="#325FEC"
+                                        stroke-width="1.5" stroke-linecap="square" />
+                                </svg>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="vacancies__item">
+                        <button class="vacancies__button js-vacancy" data-location="Віддалено / м. Київ"
+                            data-title="Маркетолог B2B-напрямку" data-salary="від 35 000 грн + % від продажів"
+                            data-format="Повна зайнятість"
+                            data-responsibilities="Працюватимеш із теплими та новими клієнтами (B2B, будівництво, агро, промисловість); Проводитимеш презентації техніки, виїзди на об’єкти; Формуватимеш комерційні пропозиції та супроводжуватимеш угоди до підписання; Підтримуватимеш довгострокові відносини з клієнтами"
+                            data-expectations="Досвід роботи в B2B-продажах від 2 років; Розуміння технічної сфери (буде перевагою); Комунікаційні навички та орієнтація на результат; Готовність до відряджень"
+                            data-offer="Конкурентну заробітну плату (ставка + % від продажів); Навчання та підтримку з боку команди інженерів; Можливість впливати на великі проєкти; Офіційне працевлаштування та соцпакет">
+                            <div class="vacancies__content">
+                                <p class="vacancies__location">
+                                    <span class="vacancies__icon">
+                                        <img src="./assets/images/icons/ico-pin.svg" alt="Icon">
+                                    </span>
+                                    <span>Віддалено / м. Київ</span>
+                                </p>
+                                <p class="vacancies__title">Маркетолог B2B-напрямку</p>
+                                <p class="vacancies__salary">
+                                    від 35 000 грн + % від продажів
+                                </p>
+                            </div>
+
+                            <div class="vacancies__btn">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 18.1125L18 6.11255M18 6.11255H10M18 6.11255V14.1125" stroke="#325FEC"
+                                        stroke-width="1.5" stroke-linecap="square" />
+                                </svg>
+                            </div>
+                        </button>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
