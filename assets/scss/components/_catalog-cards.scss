@@ -137,4 +137,59 @@
             @include transitions(0.2s, ease-in);
         }
     }
+
+    &--full {
+        .catalog-cards__item {
+            &:nth-child(4),
+            &:nth-child(3) {
+                background: #fff;
+
+                @include hover {
+                    background: var(--accent-color);
+
+                    .catalog-cards__cta {
+                        background: #fff;
+
+                        svg {
+                            color: var(--accent-color);
+                        }
+                    }
+
+                    .catalog-cards__title {
+                        color: #fff;
+                    }
+
+                    .catalog-cards__thumb {
+                        &--hover {
+                            opacity: 0;
+                            visibility: hidden;
+                        }
+
+                        &--default {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+                .catalog-cards__thumb {
+                    &--hover {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+
+                .catalog-cards__title {
+                    color: var(--dark-color);
+                }
+
+                .catalog-cards__cta {
+                    background: var(--accent-color);
+
+                    svg {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -151,4 +151,68 @@
             }
         }
     }
+
+    &--career-page {
+        position: relative;
+        overflow: hidden;
+        padding-top: 101px;
+
+        @include media('tablet-above') {
+            padding-top: 117px;
+        }
+
+        .container {
+            &:first-of-type {
+                @include media('tablet-above') {
+                    margin-bottom: 32px;
+                }
+
+                @include media('laptop-above') {
+                    margin-bottom: 40px;
+                }
+
+                .knows__descr {
+                    display: none;
+                    @include media('tablet-above') {
+                        display: block;
+                    }
+                }
+            }
+
+            &:last-of-type {
+                .knows__descr {
+                    display: block;
+                    margin-bottom: 32px;
+                    @include media('tablet-above') {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .knows__thumb {
+            height: 280px;
+            margin-bottom: 16px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            @include media('tablet-above') {
+                height: 320px;
+                margin-bottom: 32px;
+            }
+
+            @include media('laptop-above') {
+                height: 523px;
+                margin-bottom: 40px;
+            }
+        }
+
+        .knows__stats {
+            padding-top: 0;
+        }
+    }
 }

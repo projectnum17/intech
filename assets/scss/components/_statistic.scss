@@ -44,4 +44,10 @@
     &__text {
         font: 800 15px / 150% var(--ff-base);
     }
+
+    &--colored {
+        .statistic__title {
+            color: var(--accent-light);
+        }
+    }
 }

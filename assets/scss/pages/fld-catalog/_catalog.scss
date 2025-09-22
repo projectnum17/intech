@@ -13,6 +13,10 @@
             @include media('laptop-above') {
                 grid-template-columns: repeat(4, 1fr);
 
+                .catalog-cards__cta {
+                    display: none;
+                }
+
                 &__title {
                     font-size: 18px;
                     left: 20px;
@@ -36,6 +40,40 @@
                 @include media('laptop-above') {
                     grid-column: span 1;
                     height: 300px;
+                }
+
+                &:first-child {
+                    background: #fff;
+
+                    .catalog-cards__title {
+                        color: var(--dark-color);
+                    }
+
+                    .catalog-cards__thumb {
+                        &--hover {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+
+                    @include hover {
+                        background: var(--accent-color);
+                        .catalog-cards__title {
+                            color: #fff;
+                        }
+
+                        .catalog-cards__thumb {
+                            &--hover {
+                                opacity: 0;
+                                visibility: hidden;
+                            }
+
+                            &--default {
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                    }
                 }
             }
         }

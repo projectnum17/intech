@@ -23,7 +23,7 @@ const helpers = () => {
                                 let increment;
                                 if (target <= 50) {
                                     increment = 1;
-                                } else if (target <= 100) {
+                                } else if (target <= 500) {
                                     increment = 10;
                                 } else if (target <= 1000) {
                                     increment = 100;
