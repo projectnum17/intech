@@ -1,0 +1,68 @@
+@use '../../base/media' as *;
+@use '../../base/mixins' as *;
+
+.legals {
+    padding-top: 101px;
+    counter-reset: title;
+    @include media('tablet-above') {
+        padding-top: 117px;
+    }
+
+    h1 {
+        font: 800 26px / 130% var(--ff-base);
+        text-transform: uppercase;
+        margin: 0 0 20px 0;
+
+        @include media('laptop-above') {
+            font-size: 32px;
+            line-height: 120%;
+            margin: 0 0 40px 0;
+        }
+    }
+
+    h2 {
+        counter-increment: title;
+        font: 800 15px / 150% var(--ff-base);
+        margin: 0 0 8px 0;
+
+        @include media('laptop-above') {
+            margin: 0 0 24px 0;
+        }
+
+        &::before {
+            content: counter(title) '. ';
+            text-transform: uppercase;
+        }
+    }
+
+    p {
+        font: 800 15px / 150% var(--ff-base);
+        &:has(+ h2) {
+            margin: 0 0 20px 0;
+            @include media('laptop-above') {
+                margin: 0 0 44px 0;
+            }
+        }
+        &:has(+ ul) {
+            margin: 0 0 8px 0;
+            @include media('laptop-above') {
+                margin: 0 0 24px 0;
+            }
+        }
+    }
+
+    ul {
+        padding: 0 0 0 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin: 0 0 20px 0;
+        @include media('laptop-above') {
+            margin: 0 0 44px 0;
+        }
+
+        li {
+            font: 800 15px / 150% var(--ff-base);
+        }
+    }
+}
