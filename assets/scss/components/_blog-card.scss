@@ -107,4 +107,19 @@
             @include transitions(0.2s, ease-in);
         }
     }
+
+    &--vertical {
+        @include media('laptop-above') {
+            flex-direction: column;
+            gap: 32px;
+
+            .blog-card__date {
+                margin-bottom: 24px;
+            }
+
+            .blog-card__details {
+                justify-content: flex-start;
+            }
+        }
+    }
 }

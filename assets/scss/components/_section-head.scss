@@ -1,8 +1,8 @@
 @use '../base/media' as *;
 @use '../base/mixins' as *;
 
-.stages {
-    &__head {
+.section-head {
+    &__inner {
         margin-bottom: 20px;
 
         @include media('tablet-above') {
@@ -37,6 +37,14 @@
         @include media('laptop-above') {
             span:first-child {
                 padding: 21px 49px;
+            }
+        }
+    }
+
+    &--compact {
+        .section-head__title {
+            @include media('laptop-above') {
+                max-width: 530px;
             }
         }
     }
