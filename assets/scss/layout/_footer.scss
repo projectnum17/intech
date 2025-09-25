@@ -196,6 +196,10 @@
 
         a {
             font: 800 18px / 30px var(--ff-base);
+            @include transitions(0.2s, ease-in);
+            @include hover {
+                color: var(--accent-color);
+            }
         }
 
         span {
