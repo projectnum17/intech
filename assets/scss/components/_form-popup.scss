@@ -26,7 +26,7 @@
 
     @include media('tablet-above') {
         transform: translateY(0);
-        transform: translateX(100%);
+        // transform: translateX(100%);
         right: 0;
         height: calc(100vh - 75px);
         height: calc(100dvh - 75px);

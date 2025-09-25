@@ -135,3 +135,71 @@ section:not(:last-child) {
         margin-bottom: 40px;
     }
 }
+
+.wpcf7 {
+    height: 100%;
+
+    form {
+        height: 100%;
+    }
+}
+
+.form-popup__head {
+    &.close-hidden {
+        .form-popup__close {
+            @include media('tablet-above') {
+                display: none;
+            }
+        }
+    }
+}
+
+.form-popup__send {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+    cursor: pointer;
+
+    @include hover {
+        input {
+            background: var(--accent-light);
+        }
+        &::after {
+            background: var(--accent-light);
+        }
+    }
+
+    &::after {
+        content: '+';
+        display: inline-flex;
+        flex-shrink: 0;
+        width: 43px;
+        align-items: center;
+        justify-content: center;
+        background: var(--accent-color);
+        @include transitions(0.3s, ease-in);
+        @include media('laptop-above') {
+            width: 64px;
+        }
+    }
+    input {
+        cursor: pointer;
+        background: var(--accent-color);
+        color: #fff;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include transitions(0.3s, ease-in);
+        font: 800 16px / 110% var(--ff-base);
+        text-transform: uppercase;
+        padding: 13px;
+        width: 100%;
+        @include media('laptop-above') {
+            font-size: 18px;
+            padding: 20px;
+            line-height: 130%;
+        }
+    }
+}
