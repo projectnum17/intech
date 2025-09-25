@@ -86,11 +86,7 @@
     &--about-page {
         position: relative;
         overflow: hidden;
-        padding-top: 101px;
         margin-bottom: var(--section-mb);
-        @include media('tablet-above') {
-            padding-top: 117px;
-        }
 
         .container {
             &:first-of-type {

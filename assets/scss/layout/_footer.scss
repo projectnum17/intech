@@ -13,10 +13,10 @@
     }
 
     .container {
-        padding-inline: 16px;
+        padding-inline: var(--container-padding);
 
         @media (min-width: 577px) {
-            padding-inline: 40px;
+            padding-inline: var(--container-padding);
         }
     }
 
@@ -145,6 +145,14 @@
         li {
             font: 800 15px / 90% var(--ff-base);
             text-transform: uppercase;
+
+            a {
+                @include transitions(0.2s, ease-in);
+            }
+
+            &:hover a {
+                color: var(--accent-color);
+            }
         }
     }
 
@@ -175,6 +183,15 @@
             flex-direction: row;
             align-items: center;
             gap: 10px;
+        }
+
+        li:not(:first-child) {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            &::before {
+                content: '|';
+            }
         }
 
         a {

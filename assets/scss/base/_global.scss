@@ -38,6 +38,15 @@ body {
     }
 }
 
+body:has(section:first-child.knows.knows--about-page) {
+    .main {
+        padding-top: 101px;
+        @include media('tablet-above') {
+            padding-top: 117px;
+        }
+    }
+}
+
 main {
     flex: 1;
 }

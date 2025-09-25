@@ -15,7 +15,7 @@ export const headerFlow = () => {
     };
 
     const selectLangInteractive = () => {
-        const langSelector = document.querySelector('.js-lang');
+        const langSelector = document.querySelector('.lang-switcher');
 
         if (!langSelector) return;
 

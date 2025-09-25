@@ -47,7 +47,22 @@
             }
         }
 
-        @include media('laptop-above') {
+        @include media('air-above') {
+            &:nth-child(5n + 1),
+            &:nth-child(5n + 2),
+            &:nth-child(5n + 3) {
+                grid-column: span 2;
+                height: 390px;
+            }
+
+            &:nth-child(5n + 4),
+            &:nth-child(5n + 5) {
+                grid-column: span 3;
+                height: 310px;
+            }
+        }
+
+        @include media('desktop-above') {
             &:nth-child(5n + 1),
             &:nth-child(5n + 2),
             &:nth-child(5n + 3) {

@@ -5,7 +5,7 @@ section.intro--home {
     margin-bottom: 32px;
     max-width: 2560px;
     margin: 0 auto 32px;
-    @include media('laptop-above') {
+    @include media('air-above') {
         margin: 0 auto 40px;
     }
 }
@@ -50,7 +50,11 @@ section.intro--home {
                 gap: 20px;
             }
 
-            @include media('laptop-above') {
+            @include media('air-above') {
+                padding-block: 90px 45px;
+            }
+
+            @include media('desktop-above') {
                 padding-block: 122px 45px;
             }
         }
@@ -71,7 +75,13 @@ section.intro--home {
                 margin-bottom: 24px;
             }
 
-            @include media('laptop-above') {
+            @include media('air-above') {
+                max-width: 1296px;
+                margin-bottom: 20px;
+                font-size: 58px;
+            }
+
+            @include media('desktop-above') {
                 max-width: 1296px;
                 margin-bottom: 32px;
             }
@@ -81,7 +91,11 @@ section.intro--home {
             font: 800 15px / 150% var(--ff-base);
             margin-bottom: 24px;
 
-            @include media('laptop-above') {
+            @include media('air-above') {
+                font-size: 24px;
+            }
+
+            @include media('desktop-above') {
                 font-size: 32px;
             }
 
@@ -120,7 +134,14 @@ section.intro--home {
                 margin-left: auto;
             }
 
-            @include media('laptop-above') {
+            @include media('air-above') {
+                max-width: 308px;
+                min-height: 270px;
+                padding: 20px;
+                margin: 0 0 30px auto;
+            }
+
+            @include media('desktop-above') {
                 max-width: 308px;
                 min-height: 336px;
                 padding: 24px;
@@ -148,12 +169,17 @@ section.intro--home {
         .intro__subtitle {
             font: 800 26px / 130% var(--ff-base);
             text-transform: uppercase;
+
             @include media('tablet-above') {
                 font-size: 18px;
                 line-height: 110%;
             }
 
             @include media('laptop-above') {
+                font-size: 21px;
+            }
+
+            @include media('desktop-above') {
                 font-size: 24px;
             }
         }
@@ -185,11 +211,6 @@ section.intro--home {
             @include media('tablet-above') {
                 max-width: max-content;
                 margin-bottom: 0;
-                display: none;
-
-                &.mobile--hidden {
-                    display: flex;
-                }
 
                 span {
                     &:first-child {
@@ -198,7 +219,15 @@ section.intro--home {
                 }
             }
 
-            @include media('laptop-above') {
+            @include media('air-above') {
+                span {
+                    &:first-child {
+                        padding: 17px 49px;
+                    }
+                }
+            }
+
+            @include media('desktop-above') {
                 span {
                     &:first-child {
                         padding: 21px 49px;

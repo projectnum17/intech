@@ -4,26 +4,44 @@
 .news-card {
     height: 420px;
     position: relative;
-    @include media('laptop-above') {
-        @include media('laptop-above') {
-            &:nth-child(4n + 1) {
-                grid-column: 1 / span 3;
-                grid-row: span 2;
-                height: 581px;
-            }
+    @include media('air-above') {
+        &:nth-child(4n + 1) {
+            grid-column: 1 / span 3;
+            grid-row: span 2;
+            height: 481px;
+        }
 
-            &:nth-child(4n + 2),
-            &:nth-child(4n + 3) {
-                grid-column: 4 / span 3;
-                grid-row: auto;
-                height: 278px;
-            }
+        &:nth-child(4n + 2),
+        &:nth-child(4n + 3) {
+            grid-column: 4 / span 3;
+            grid-row: auto;
+            height: 230px;
+        }
 
-            &:nth-child(4n + 4) {
-                grid-column: 1 / span 6;
-                grid-row: auto;
-                height: 436px;
-            }
+        &:nth-child(4n + 4) {
+            grid-column: 1 / span 6;
+            grid-row: auto;
+            height: 336px;
+        }
+    }
+    @include media('desktop-above') {
+        &:nth-child(4n + 1) {
+            grid-column: 1 / span 3;
+            grid-row: span 2;
+            height: 581px;
+        }
+
+        &:nth-child(4n + 2),
+        &:nth-child(4n + 3) {
+            grid-column: 4 / span 3;
+            grid-row: auto;
+            height: 278px;
+        }
+
+        &:nth-child(4n + 4) {
+            grid-column: 1 / span 6;
+            grid-row: auto;
+            height: 436px;
         }
     }
 
@@ -38,21 +56,21 @@
     }
 
     &::after {
-        background: #00000033;
+        background: rgba(0, 0, 0, 0.2);
         @include transitions(0.2s, ease-in);
     }
 
     &::before {
         background: linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.2),
-            rgba(0, 0, 0, 0.2)
+            180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.7) 100%
         );
     }
 
     @include hover {
         &::after {
-            background: #00000066;
+            background: rgba(0, 0, 0, 0.4);
         }
     }
     &__thumb {

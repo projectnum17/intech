@@ -7,8 +7,12 @@
         @media (min-width: 992px) {
             @content;
         }
+    } @else if $size == 'air-above' {
+        @media (min-width: 992px) and (max-width: 1440px) {
+            @content;
+        }
     } @else if $size == 'desktop-above' {
-        @media (min-width: 1200) {
+        @media (min-width: 1441px) {
             @content;
         }
     }

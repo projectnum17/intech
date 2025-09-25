@@ -2,7 +2,7 @@
 @use '../base/mixins' as *;
 
 .advantages {
-    padding-top: var(--section-mb);
+    // padding-top: var(--section-mb);
     .advantages__title {
         @include media('laptop-above') {
             margin-bottom: 40px;
